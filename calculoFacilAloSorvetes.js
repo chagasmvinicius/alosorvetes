@@ -1,0 +1,95 @@
+/* DECLARAÇÃO DOS PREÇOS DOS PRODUTOS COMO OBJETO */
+
+const precoProdutos = {
+    precoVivacity: 3,
+    precoPremium: 3.5,
+    precoSundae: 5.5,
+    precoPablito: 5,
+    precoChocosonho: 4,
+    precoPaleta: 8,
+    precoClassico: 7,
+    precoPote2L: 27,
+    precoAcai200Ml: 5.5,
+    precoPote200Ml: 5,
+    precoPote1L: 23,
+    precoPote1LDiet: 32,
+}
+
+/* DECLARAÇÃO DOS TIPOS DE PRODUTOS */
+
+const tipoProdutos = {
+    tipoVivacity: 'Vivacity',
+    tipoPremium: 'Premium',
+    tipoSundae: 'Sundae',
+    tipoPablito: 'Pablito',
+    tipoChocosonho: 'Chocosonho',
+    tipoPaleta: 'Paleta',
+    tipoClassico: 'Classico',
+    tipoPote2L: '2l',
+    tipoAcai200Ml: 'Acai',
+    tipoPote200Ml: '200ml',
+    tipoPote1L: '1l',
+    tipoPote1LDiet: 'Diet',
+}
+
+/* INPUTS DOS USUÁRIOS */
+
+const readLine = require('readline-sync')
+let respostaTipo = function() {
+    const tipoSorvete = ['Vivacity', 'Premium', 'Sundae', 'Pablito', 'Chocosonho', 'Paleta', 'Classico', '2L', 'Acai', '200ml', '1l', 'Diet']
+    const selecioneTipo = readLine.keyInSelect(tipoSorvete)
+    console.log(selecioneTipo)
+}
+
+/* FUNÇÃO PARA CALCULO DO PREÇO */
+
+const qtdInputs = []
+function calculandoPreco(quantidade = 0, respostaTipo) {
+    if (respostaTipo == tipoProdutos.tipoVivacity) {
+        qtdInputs.push(quantidade * precoProdutos.precoVivacity)
+        return qtdInputs
+    } else if (tipo == tipoProdutos.tipoPremium) {
+        qtdInputs.push(quantidade * precoProdutos.precoPremium)
+        return qtdInputs
+    } else if (tipo == tipoProdutos.tipoSundae) {
+        qtdInputs.push(quantidade * precoProdutos.precoSundae)
+        return qtdInputs
+    } else if (tipo == tipoProdutos.tipoPablito) {
+        qtdInputs.push(quantidade * precoProdutos.precoPablito)
+        return qtdInputs
+    } else if (tipo == tipoProdutos.tipoChocosonho) {
+        qtdInputs.push(quantidade * precoProdutos.precoChocosonho)
+        return qtdInputs
+    } else if (tipo == tipoProdutos.tipoPaleta) {
+        qtdInputs.push(quantidade * precoProdutos.precoPaleta)
+        return qtdInputs
+    } else if (tipo == tipoProdutos.tipoClassico) {
+        qtdInputs.push(quantidade * precoProdutos.precoClassico)
+        return qtdInputs
+    } else if (tipo == tipoProdutos.tipoPote2L) {
+        qtdInputs.push(quantidade * precoProdutos.precoPote2L)
+        return qtdInputs
+    } else if (tipo == tipoProdutos.tipoAcai200Ml) {
+        qtdInputs.push(quantidade * precoProdutos.precoAcai200Ml)
+        return qtdInputs
+    } else if (tipo == tipoProdutos.tipoPote200Ml) {
+        qtdInputs.push(quantidade * precoProdutos.precoPote200Ml)
+        return qtdInputs
+    } else if (tipo == tipoProdutos.tipoPote1L) {
+        qtdInputs.push(quantidade * precoProdutos.precoPote1L)
+        return qtdInputs
+    } else if (tipo == tipoProdutos.tipoPote1LDiet) {
+        qtdInputs.push(quantidade * precoProdutos.precoPote1LDiet)
+        return qtdInputs
+    }
+}
+
+function finalizandoPreco() {
+    let precoFinal = 0
+    for (let i = 0; qtdInputs.length; i++) {
+        precoFinal += qtdInputs[i]
+    }
+}
+
+//console.log(calculandoPreco(2,'Vivacity'))
+//console.log(qtdInputs)
