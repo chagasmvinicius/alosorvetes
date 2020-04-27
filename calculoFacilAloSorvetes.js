@@ -88,7 +88,7 @@ function calculandoPreco(quantidade = 0, tipo = null) {
 
 const somarArray = (acumulador, valorAtual) => acumulador + valorAtual
 
-/* INPUTS */
+/* INPUTS ON NODE*/
 
 console.log(calculandoPreco(2, 'Vivacity'))
 console.log(calculandoPreco(2, 'Premium'))
