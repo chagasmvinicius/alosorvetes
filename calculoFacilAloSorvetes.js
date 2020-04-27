@@ -32,67 +32,42 @@ const tipoProdutos = {
     tipoPote1LDiet: 'Diet',
 }
 
-/* INPUTS DOS USUÁRIOS */
+/* CAPTURA DE INPUTS */
+const inputsArray = []
+let tipoInput = ''
+let quantidadeInput = 0
+function capturarInput() {
+    tipoInput = document.getElementById('inputTipo').value
+    quantidadeInput = document.getElementById('inputQtd').value
 
-//const readLine = require('readline-sync')
-//let respostaTipo = function () {
-    //const tipoSorvete = ['Vivacity', 'Premium', 'Sundae', 'Pablito', 'Chocosonho', 'Paleta', 'Classico', '2L', 'Acai', '200ml', '1l', 'Diet']
-    //const selecioneTipo = readLine.keyInSelect(tipoSorvete)
-    //console.log(selecioneTipo)
-//}
+    /* CALCULO DO PREÇO */
 
-/* FUNÇÃO PARA CALCULO DO PREÇO */
-
-const qtdInputs = []
-function calculandoPreco(quantidade = 0, tipo = null) {
-    if (tipo == tipoProdutos.tipoVivacity) {
-        qtdInputs.push(quantidade * precoProdutos.precoVivacity)
-        return qtdInputs
-    } else if (tipo == tipoProdutos.tipoPremium) {
-        qtdInputs.push(quantidade * precoProdutos.precoPremium)
-        return qtdInputs
-    } else if (tipo == tipoProdutos.tipoSundae) {
-        qtdInputs.push(quantidade * precoProdutos.precoSundae)
-        return qtdInputs
-    } else if (tipo == tipoProdutos.tipoPablito) {
-        qtdInputs.push(quantidade * precoProdutos.precoPablito)
-        return qtdInputs
-    } else if (tipo == tipoProdutos.tipoChocosonho) {
-        qtdInputs.push(quantidade * precoProdutos.precoChocosonho)
-        return qtdInputs
-    } else if (tipo == tipoProdutos.tipoPaleta) {
-        qtdInputs.push(quantidade * precoProdutos.precoPaleta)
-        return qtdInputs
-    } else if (tipo == tipoProdutos.tipoClassico) {
-        qtdInputs.push(quantidade * precoProdutos.precoClassico)
-        return qtdInputs
-    } else if (tipo == tipoProdutos.tipoPote2L) {
-        qtdInputs.push(quantidade * precoProdutos.precoPote2L)
-        return qtdInputs
-    } else if (tipo == tipoProdutos.tipoAcai200Ml) {
-        qtdInputs.push(quantidade * precoProdutos.precoAcai200Ml)
-        return qtdInputs
-    } else if (tipo == tipoProdutos.tipoPote200Ml) {
-        qtdInputs.push(quantidade * precoProdutos.precoPote200Ml)
-        return qtdInputs
-    } else if (tipo == tipoProdutos.tipoPote1L) {
-        qtdInputs.push(quantidade * precoProdutos.precoPote1L)
-        return qtdInputs
-    } else if (tipo == tipoProdutos.tipoPote1LDiet) {
-        qtdInputs.push(quantidade * precoProdutos.precoPote1LDiet)
-        return qtdInputs
+    if (tipoInput == tipoProdutos.tipoVivacity) {
+        inputsArray.push(quantidadeInput * precoProdutos.precoVivacity)
+    } else if (tipoInput == tipoProdutos.tipoPremium) {
+        inputsArray.push(quantidadeInput * precoProdutos.precoPremium)
+    } else if (tipoInput == tipoProdutos.tipoSundae) {
+        inputsArray.push(quantidadeInput * precoProdutos.precoSundae)
+    } else if (tipoInput == tipoProdutos.tipoPablito) {
+        inputsArray.push(quantidadeInput * precoProdutos.precoPablito)
+    } else if (tipoInput == tipoProdutos.tipoChocosonho) {
+        inputsArray.push(quantidadeInput * precoProdutos.precoChocosonho)
+    } else if (tipoInput == tipoProdutos.tipoPaleta) {
+        inputsArray.push(quantidadeInput * precoProdutos.precoPaleta)
+    } else if (tipoInput == tipoProdutos.tipoClassico) {
+        inputsArray.push(quantidadeInput * precoProdutos.precoClassico)
+    } else if (tipoInput == tipoProdutos.tipoPote2L) {
+        inputsArray.push(quantidadeInput * precoProdutos.precoPote2L)
+    } else if (tipoInput == tipoProdutos.tipoAcai200Ml) {
+        inputsArray.push(quantidadeInput * precoProdutos.precoAcai200Ml)
+    } else if (tipoInput == tipoProdutos.tipoPote200Ml) {
+        inputsArray.push(quantidadeInput * precoProdutos.precoPote200Ml)
+    } else if (tipoInput == tipoProdutos.tipoPote1L) {
+        inputsArray.push(quantidadeInput * precoProdutos.precoPote1L)
+    } else if (tipoInput == tipoProdutos.tipoPote1LDiet) {
+        inputsArray.push(quantidadeInput * precoProdutos.precoPote1LDiet)
     }
+    let somarArray = (acumulador, valorAtual) => acumulador + valorAtual
+    console.log('R$ ', inputsArray.reduce(somarArray))
+    document.getElementById('valorFinal').innerHTML = inputsArray.reduce(somarArray)
 }
-
-/* SOMATÓRIO DO ARRAY */
-
-const somarArray = (acumulador, valorAtual) => acumulador + valorAtual
-
-/* INPUTS ON NODE*/
-
-console.log(calculandoPreco(2, 'Vivacity'))
-console.log(calculandoPreco(2, 'Premium'))
-console.log(calculandoPreco(12, 'Classico'))
-console.log(calculandoPreco(8, '2l'))
-console.log(calculandoPreco(2, '200ml'))
-console.log(qtdInputs.reduce(somarArray))
