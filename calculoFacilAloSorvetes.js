@@ -42,7 +42,7 @@ let quantidadeInput = 0
 function capturarInput() {
     tipoInput = document.getElementById('inputTipo').value
     quantidadeInput = document.getElementById('inputQtd').value
-    let qtdCombo = Math.floor(quantidadeInput / 5)
+    let qtdCombo = Math.floor(quantidadeInput / 6) // A cada 5 compras a sexta sai de graça
 
     /* CALCULO DO PREÇO */
 
@@ -50,7 +50,9 @@ function capturarInput() {
     if (tipoInput == tipoProdutos.tipoVivacity && quantidadeInput > 5) {
         inputsArray.push((quantidadeInput * precoProdutos.precoVivacity) - (precoProdutos.precoVivacity) * qtdCombo)
         inputsArrayBrindes.push(qtdCombo)
-        nomesBrindes.push(tipoProdutos.tipoVivacity + '; ')
+        for (let i = 0; i < qtdCombo; i++) {
+            nomesBrindes.push(tipoProdutos.tipoVivacity + '; ')
+        }
     } else if (tipoInput == tipoProdutos.tipoVivacity) {
         inputsArray.push(quantidadeInput * precoProdutos.precoVivacity)
 
@@ -58,7 +60,9 @@ function capturarInput() {
     } else if (tipoInput == tipoProdutos.tipoPremium && quantidadeInput > 5) {
         inputsArray.push((quantidadeInput * precoProdutos.precoPremium) - (precoProdutos.precoPremium) * qtdCombo)
         inputsArrayBrindes.push(qtdCombo)
-        nomesBrindes.push(tipoProdutos.tipoPremium + '; ')
+        for (let i = 0; i < qtdCombo; i++) {
+            nomesBrindes.push(tipoProdutos.tipoPremium + '; ')
+        }
     } else if (tipoInput == tipoProdutos.tipoPremium) {
         inputsArray.push(quantidadeInput * precoProdutos.precoPremium)
 
@@ -74,7 +78,9 @@ function capturarInput() {
     } else if (tipoInput == tipoProdutos.tipoChocosonho && quantidadeInput > 5) {
         inputsArray.push((quantidadeInput * precoProdutos.precoChocosonho) - (precoProdutos.precoChocosonho) * qtdCombo)
         inputsArrayBrindes.push(qtdCombo)
-        nomesBrindes.push(tipoProdutos.tipoChocosonho + '; ')
+        for (let i = 0; i < qtdCombo; i++) {
+            nomesBrindes.push(tipoProdutos.tipoChocosonho + '; ')
+        }
     } else if (tipoInput == tipoProdutos.tipoChocosonho) {
         inputsArray.push(quantidadeInput * precoProdutos.precoChocosonho)
 
@@ -86,7 +92,9 @@ function capturarInput() {
     } else if (tipoInput == tipoProdutos.tipoClassico && quantidadeInput > 5) {
         inputsArray.push((quantidadeInput * precoProdutos.precoClassico) - (precoProdutos.precoClassico) * qtdCombo)
         inputsArrayBrindes.push(qtdCombo)
-        nomesBrindes.push(tipoProdutos.tipoClassico + '; ')
+        for (let i = 0; i < qtdCombo; i++) {
+            nomesBrindes.push(tipoProdutos.tipoClassico + '; ')
+        }
     } else if (tipoInput == tipoProdutos.tipoClassico) {
         inputsArray.push(quantidadeInput * precoProdutos.precoClassico)
 
