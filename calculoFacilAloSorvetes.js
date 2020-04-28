@@ -41,29 +41,48 @@ function capturarInput() {
     quantidadeInput = document.getElementById('inputQtd').value
 
     /* CALCULO DO PREÇO */
-
-    if (tipoInput == tipoProdutos.tipoVivacity) {
+    // VIVACITY
+    if (tipoInput == tipoProdutos.tipoVivacity && quantidadeInput > 5) {
+        inputsArray.push((quantidadeInput * precoProdutos.precoVivacity) - (precoProdutos.precoVivacity) * Math.floor(quantidadeInput / 5))
+    } else if (tipoInput == tipoProdutos.tipoVivacity) {
         inputsArray.push(quantidadeInput * precoProdutos.precoVivacity)
+        // PREMIUM
+    } else if (tipoInput == tipoProdutos.tipoPremium && quantidadeInput > 5) {
+        inputsArray.push((quantidadeInput * precoProdutos.precoPremium) - (precoProdutos.precoPremium) * Math.floor(quantidadeInput / 5))
     } else if (tipoInput == tipoProdutos.tipoPremium) {
         inputsArray.push(quantidadeInput * precoProdutos.precoPremium)
+        // SUNDAE
     } else if (tipoInput == tipoProdutos.tipoSundae) {
         inputsArray.push(quantidadeInput * precoProdutos.precoSundae)
+        // PABLITO
     } else if (tipoInput == tipoProdutos.tipoPablito) {
         inputsArray.push(quantidadeInput * precoProdutos.precoPablito)
+        // CHOCOSONHO
+    } else if (tipoInput == tipoProdutos.tipoChocosonho && quantidadeInput > 5) {
+        inputsArray.push((quantidadeInput * precoProdutos.precoChocosonho) - (precoProdutos.precoChocosonho) * Math.floor(quantidadeInput / 5))
     } else if (tipoInput == tipoProdutos.tipoChocosonho) {
         inputsArray.push(quantidadeInput * precoProdutos.precoChocosonho)
+        // PALETA
     } else if (tipoInput == tipoProdutos.tipoPaleta) {
         inputsArray.push(quantidadeInput * precoProdutos.precoPaleta)
+        // CLASSICO
+    } else if (tipoInput == tipoProdutos.tipoClassico && quantidadeInput > 5) {
+        inputsArray.push((quantidadeInput * precoProdutos.precoClassico) - (precoProdutos.precoClassico) * Math.floor(quantidadeInput / 5))
     } else if (tipoInput == tipoProdutos.tipoClassico) {
         inputsArray.push(quantidadeInput * precoProdutos.precoClassico)
+        // POTE 2L
     } else if (tipoInput == tipoProdutos.tipoPote2L) {
         inputsArray.push(quantidadeInput * precoProdutos.precoPote2L)
+        // ACAI 200 ML
     } else if (tipoInput == tipoProdutos.tipoAcai200Ml) {
         inputsArray.push(quantidadeInput * precoProdutos.precoAcai200Ml)
+        // POTE 200 ML
     } else if (tipoInput == tipoProdutos.tipoPote200Ml) {
         inputsArray.push(quantidadeInput * precoProdutos.precoPote200Ml)
+        // POTE 1 L
     } else if (tipoInput == tipoProdutos.tipoPote1L) {
         inputsArray.push(quantidadeInput * precoProdutos.precoPote1L)
+        // POTE DIET 1L
     } else if (tipoInput == tipoProdutos.tipoPote1LDiet) {
         inputsArray.push(quantidadeInput * precoProdutos.precoPote1LDiet)
     }
