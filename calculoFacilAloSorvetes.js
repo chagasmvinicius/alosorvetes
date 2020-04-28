@@ -34,9 +34,9 @@ const tipoProdutos = {
 
 /* CAPTURA DE INPUTS */
 
-const inputsArray = []
-const inputsArrayBrindes = []
-const nomesBrindes = []
+const inputsArray = [0]
+const inputsArrayBrindes = [0]
+const nomesBrindes = ['']
 let tipoInput = ''
 let quantidadeInput = 0
 function capturarInput() {
