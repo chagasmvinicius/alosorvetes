@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>[2.3] Calculadora de Pedidos</title>
+    <script src="calculoFacilAloSorvetes.js"></script>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <h2 align="center">Calculadora de Pedidos Alô Sorvetes! </h2>
+    <h3 align="left">1) Digite o tipo do sorvete:</h3>
+    <input type="text" id=inputTipo>
+    <h3 align="left">2) Digite a quantidade para esse tipo (incluir brindes):</h3>
+    <input type="text" id=inputQtd><br><br><input type="submit" onclick="capturarInput()" value="Calcular!">
+    <input type="button" value="Reiniciar cálculo" onClick="history.go(0)">
+    <p align="left" id="valorFinal"></p>
+    <p align="left" id="qtdBrindes"></p>
+    <p align="left" id="nomesBrindes"></p>
+    <hr>
+    <p align="center"><b>No campo "tipo do sorvete"escreva o nome exatamente como está escrito abaixo (ao lado o preço):
+        </b></p>
+    <p align="center"><b>Vivacity:</b> R$ 3,00
+        <br><b>Premium:</b> R$ 3,50
+        <br><b>Sundae:</b> R$ 5,50
+        <br><b>Pablito:</b> R$ 5,00
+        <br><b>Chocosonho:</b> R$ 4,00
+        <br><b>Paleta:</b> R$ 8,00
+        <br><b>Classico:</b> R$ 7,00
+        <br><b>2l:</b> R$ 27,00
+        <br><b>Acai:</b> R$ 5,50
+        <br><b>200ml:</b> R$ 5,00
+        <br><b>1l:</b> R$ 23,00
+        <br><b>Diet:</b> R$ 32,00
+        <br>
+        <br>
+        <img src="logoAloSorvetes.png" width="180px" height="180px">
+        <hr>
+    </p>
+    <p align="center">Vinicius Chagas</p>
+</body>
+
+</html>
