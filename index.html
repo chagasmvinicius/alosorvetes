@@ -2,42 +2,162 @@
 <html>
 
 <head>
-    <title>[2.4] Calculadora de Pedidos</title>
+    <title>Calculadora de Pedidos 3.0</title>
     <script src="calculoFacilAloSorvetes.js"></script>
     <meta charset="UTF-8">
 </head>
 
 <body>
-    <h2 align="center">Calculadora de Pedidos Alô Sorvetes! </h2>
-    <h3 align="left">1) Digite o tipo do sorvete:</h3>
-    <input type="text" id=inputTipo>
-    <h3 align="left">2) Digite a quantidade para esse tipo (incluir brindes):</h3>
-    <input type="text" id=inputQtd><br><br><input type="submit" onclick="capturarInput()" value="Calcular!">
-    <input type="button" value="Reiniciar cálculo" onClick="history.go(0)">
-    <p align="left" id="valorFinal"></p>
-    <p align="left" id="qtdBrindes"></p>
-    <p align="left" id="nomesBrindes"></p>
-    <hr>
-    <p align="center"><b>Tipos e preços:
-        </b></p>
-    <p align="center"><b>Vivacity:</b> R$ 3,00
-        <br><b>Premium:</b> R$ 3,50
-        <br><b>Sundae:</b> R$ 5,50
-        <br><b>Pablito:</b> R$ 5,00
-        <br><b>Chocosonho:</b> R$ 4,00
-        <br><b>Paleta:</b> R$ 8,00
-        <br><b>Classico:</b> R$ 7,00
-        <br><b>2l:</b> R$ 27,00
-        <br><b>Acai:</b> R$ 5,50
-        <br><b>200ml:</b> R$ 5,00
-        <br><b>1l:</b> R$ 23,00
-        <br><b>Diet:</b> R$ 32,00
-        <br>
-        <br>
-        <img src="logoAloSorvetes.png" width="180px" height="180px">
+    <font face="Verdana">
+        <h3 align="center">Calculadora de Pedidos Alô Sorvetes! </h3>
+        <h4 align="left">1) Digite o tipo do sorvete (valor sublinhado no item 3):</h4>
+        <input type="text" id=inputTipo>
+        <h4 align="left">2) Digite a quantidade para esse tipo (incluir brindes):</h4>
+        <input type="text" id=inputQtd><br><br><input type="submit" onclick="capturarInput()" value="Calcular!">
+        <input type="button" value="Reiniciar" onClick="history.go(0)">
+        <font color="red">
+            <p align="left" id="valorFinal"></p>
+            <p align="left" id="qtdBrindes"></p>
+            <p align="left" id="nomesBrindes"></p>
+        </font>
         <hr>
-    </p>
-    <p align="center">Vinicius Chagas</p>
+        <h4><b>3) Clicar nos botões para descriminar as quantidades dos sabores</b></h4>
+        <h5>Clique no botão quantas vezes o sabor foi pedido.</h5>
+        <h5>Linha <u>Vivacity</u> (preço unitário de R$ 3,00):</h5>
+        <input type="submit" onclick="quantidadeVivacityAmendoim()" value="Vivacity Amendoim">
+        <input type="submit" onclick="quantidadeVivacityChocolate()" value="Vivacity Chocolate">
+        <input type="submit" onclick="quantidadeVivacityMorango()" value="Vivacity Morango">
+        <input type="submit" onclick="quantidadeVivacityCoco()" value="Vivacity Coco"><br><br>
+        <input type="submit" onclick="quantidadeVivacityLimao()" value="Vivacity Limão">
+        <input type="submit" onclick="quantidadeVivacityUva()" value="Vivacity Uva">
+        <input type="submit" onclick="quantidadeVivacityGoiaba()" value="Vivacity Goiaba">
+        <input type="submit" onclick="quantidadeVivacityLeiteCondensado()" value="Vivacity Leite Condensado"><br><br>
+        <input type="submit" onclick="quantidadeVivacityMilhoVerde()" value="Vivacity Milho Verde">
+        <input type="submit" onclick="quantidadeVivacityMaracuja()" value="Vivacity Maracujá">
+        <h5>Linha <u>Premium</u> (preço unitário de R$ 3,50):</h5>
+        <input type="submit" onclick="quantidadePremiumNapolitano()" value="Premium Napolitano">
+        <input type="submit" onclick="quantidadePremiumDoceLeite()" value="Premium Doce de Leite">
+        <h5>Linha <u>Sundae</u> (preço unitário de R$ 5,50):</h5>
+        <input type="submit" onclick="quantidadeSundaeMorango()" value="Sundae Morango">
+        <input type="submit" onclick="quantidadeSundaeChocolate()" value="Sundae Chocolate">
+        <h5>Linha <u>Pablito</u> (preço unitário de R$ 5,00):</h5>
+        <input type="submit" onclick="quantidadePablito()" value="Pablito">
+        <h5>Linha <u>Chocosonhos</u> (preço unitário de R$ 4,00):</h5>
+        <input type="submit" onclick="quantidadeChocosonhosAmendoky()" value="Chocosonhos Amendoky">
+        <input type="submit" onclick="quantidadeChocosonhosBrigadeiro()" value="Chocosonhos Brigadeiro">
+        <input type="submit" onclick="quantidadeChocosonhosChococo()" value="Chocosonhos Chococo">
+        <input type="submit" onclick="quantidadeChocosonhosSensacao()" value="Chocosonhos Sensação"><br><br>
+        <input type="submit" onclick="quantidadeChocosonhosEsquimoky()" value="Chocosonhos Esquimoky">
+        <h5>Linha <u>Paleta</u> (preço unitário de R$ 8,00):</h5>
+        <input type="submit" onclick="quantidadePaletaMorango()" value="Paleta Morango c/ Leite Condensado">
+        <input type="submit" onclick="quantidadePaletaBaunilhaCapuccino()" value="Paleta Baunilha c/ Capuccino">
+        <input type="submit" onclick="quantidadePaletaChocolateTrufado()" value="Paleta Chocolate Trufado">
+        <input type="submit" onclick="quantidadePaletaMaracujaLeiteCondensado()"
+            value="Paleta Maracujá c/ Leite Condensado">
+        <h5>Linha <u>Clássicos</u> (preço unitário de R$ 7,00):</h5>
+        <input type="submit" onclick="quantidadeClassicosCapuccinoBelga()"
+            value="Clássicos Capuccino com Chocolate Belga">
+        <input type="submit" onclick="quantidadeClassicosMousseMaracuja()" value="Clássicos Mousse de Maracujá">
+        <input type="submit" onclick="quantidadeClassicosCastanha()"
+            value="Clássicos Baunilha c/ Chocolate Belga e Castanha de Cajú"><br><br>
+        <input type="submit" onclick="quantidadeClassicosTortaAlema()" value="Clássicos Torta Alemã">
+        <input type="submit" onclick="quantidadeClassicosTortaLimao()" value="Clássicos Torta Limão">
+        <input type="submit" onclick="quantidadeClassicosBaunilhaBelga()"
+            value="Clássicos Baunilha com Chocolate Belga">
+        <h5>Linha Sorvete <u>Pote 2l</u> (preço unitário de R$ 27,00):</h5>
+        <input type="submit" onclick="quantidadePote2lFlocos()" value="Pote 2l de Flocos">
+        <input type="submit" onclick="quantidadePote2lChocolate()" value="Pote 2l de Chocolate">
+        <input type="submit" onclick="quantidadePote2lNapolitano()" value="Pote 2l de Napolitano">
+        <input type="submit" onclick="quantidadePote2lPassasAoRum()" value="Pote 2l de Passas ao Rum"><br><br>
+        <input type="submit" onclick="quantidadePote2lMorango()" value="Pote 2l de Morango">
+        <h5>Linha <u>Açaí 200ml</u> (preço unitário de R$ 5,50):</h5>
+        <input type="submit" onclick="quantidadeAcaiMorango()" value="Pote 200ml Açaí de Morango">
+        <input type="submit" onclick="quantidadeAcaiBanana()" value="Pote 200ml Açaí de Banana">
+        <input type="submit" onclick="quantidadeAcaiNatural()" value="Pote 200ml Açaí Natural">
+        <h5>Linha Sorvete <u>Pote 200ml</u> (preço unitário de R$ 5,00):</h5>
+        <input type="submit" onclick="quantidadePote200mlChocolate()" value="Pote 200ml de Sorvete de Chocolate">
+        <input type="submit" onclick="quantidadePote200mlFlocos()" value="Pote 200ml de Sorvete de Flocos">
+        <input type="submit" onclick="quantidadePote200mlNapolitano()"
+            value="Pote 200ml de Sorvete de Napolitano"><br><br>
+        <input type="submit" onclick="quantidadePote200mlPassasAoRum()" value="Pote 200ml de Sorvete de Passas ao Rum">
+        <input type="submit" onclick="quantidadePote200mlMorango()" value="Pote 200ml de Sorvete de Morango">
+        <input type="submit" onclick="quantidadePote200mlMaracuja()" value="Pote 200ml de Sorvete de Maracujá">
+        <h5>Linha Sorvete <u>Pote 1l</u> (preço unitário de R$ 23,00):</h5>
+        <input type="submit" onclick="quantidadePote1lMousseMaracuja()" value="Pote 1l de Mousse de Maracujá">
+        <input type="submit" onclick="quantidadePote1lGregoMorango()" value="Pote 1l de Grego de Morango">
+        <input type="submit" onclick="quantidadePote1lChocolateTrufado()" value="Pote 1l de Chocolate Trufado">
+        <h5>Linha Sorvete Pote 1l <u>Diet Napolitano</u> (preço unitário de R$ 32,00):</h5>
+        <input type="submit" onclick="quantidadePote1lNapolitanoDiet()" value="Pote 1l de Napolitano Diet">
+        <h5>Segue abaixo a lista de sabores:</h5>
+        <font color="red">
+            <br>
+            <p id="resultadoVivacityAmendoim"></p>
+            <p id="resultadoVivacityChocolate"></p>
+            <p id="resultadoVivacityMorango"></p>
+            <p id="resultadoVivacityCoco"></p>
+            <p id="resultadoVivacityLimao"></p>
+            <p id="resultadoVivacityUva"></p>
+            <p id="resultadoVivacityGoiaba"></p>
+            <p id="resultadoVivacityLeiteCondensado"></p>
+            <p id="resultadoVivacityMilhoVerde"></p>
+            <p id="resultadoVivacityMaracuja"></p>
+
+            <p id="resultadoPremiumNapolitano"></p>
+            <p id="resultadoPremiumDoceLeite"></p>
+
+            <p id="resultadoSundaeMorango"></p>
+            <p id="resultadoSundaeChocolate"></p>
+
+            <p id="resultadoPablito"></p>
+
+            <p id="resultadoChocosonhosAmendoky"></p>
+            <p id="resultadoChocosonhosBrigadeiro"></p>
+            <p id="resultadoChocosonhosChococo"></p>
+            <p id="resultadoChocosonhosSensacao"></p>
+            <p id="resultadoChocosonhosEsquimoky"></p>
+
+            <p id="resultadoPaletaMorango"></p>
+            <p id="resultadoPaletaBaunilhaCapuccino"></p>
+            <p id="resultadoPaletaChocolateTrufado"></p>
+            <p id="resultadoPaletaMaracujaLeiteCondensado"></p>
+
+            <p id="resultadoClassicosCapuccinoBelga"></p>
+            <p id="resultadoClassicosMousseMaracuja"></p>
+            <p id="resultadoClassicosCastanha"></p>
+            <p id="resultadoClassicosTortaAlema"></p>
+            <p id="resultadoClassicosTortaLimao"></p>
+            <p id="resultadoClassicosBaunilhaBelga"></p>
+
+            <p id="resultadoPote2lFlocos"></p>
+            <p id="resultadoPote2lChocolate"></p>
+            <p id="resultadoPote2lNapolitano"></p>
+            <p id="resultadoPote2lPassasAoRum"></p>
+            <p id="resultadoPote2lMorango"></p>
+
+            <p id="resultadoAcaiMorango"></p>
+            <p id="resultadoAcaiBanana"></p>
+            <p id="resultadoAcaiNatural"></p>
+
+            <p id="resultadoPote200mlChocolate"></p>
+            <p id="resultadoPote200mlFlocos"></p>
+            <p id="resultadoPote200mlNapolitano"></p>
+            <p id="resultadoPote200mlPassasAoRum"></p>
+            <p id="resultadoPote200mlMorango"></p>
+            <p id="resultadoPote200mlMaracuja"></p>
+
+            <p id="resultadoPote1lMousseMaracuja"></p>
+            <p id="resultadoPote1lGregoMorango"></p>
+            <p id="resultadoPote1lChocolateTrufado"></p>
+
+            <p id="resultadoPote1lNapolitanoDiet"></p>
+            <br>
+        </font>
+        <h5>As informações acima servem para gestão de estoque. Favor copiar e colar no WhatsApp.</h5>
+        <hr>
+        <p align="center">
+            <img src="logoAloSorvetes.png" width="120px" height="120px">
+        </p>
+    </font>
 </body>
 
 </html>
