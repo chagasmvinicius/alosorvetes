@@ -465,28 +465,34 @@ let pote200mlMaracuja= []
 function quantidadePote200mlMaracuja() {
     pote200mlMaracuja.push(1)
     let somarPote200mlMaracuja = (acumulador, valorAtual) => acumulador + valorAtual
-    document.getElementById('resultadoPote200mlMaracuja').innerHTML = 'Quantidade Pote 200ml de Maracujá: ' + pote200mlMaracuja.reduce(somarPote200mlMaracuja)
+    let precoFinal200mlMaracuja = pote200mlMaracuja.reduce(somarPote200mlMaracuja) * precoProdutos.precoPote200Ml
+    document.getElementById('resultadoPote200mlMaracuja').innerHTML = 'Quantidade Pote 200ml de Maracujá (' + pote200mlMaracuja.reduce(somarPote200mlMaracuja) + ' x ' + 'valor unitário de R$ ' + precoProdutos.precoPote200Ml + ') = ' + ' R$ ' + precoFinal200mlMaracuja
 }
+
+/* POTE 1L */
 
 let pote1lMousseMaracuja= []
 function quantidadePote1lMousseMaracuja() {
     pote1lMousseMaracuja.push(1)
     let somarPote1lMousseMaracuja = (acumulador, valorAtual) => acumulador + valorAtual
-    document.getElementById('resultadoPote1lMousseMaracuja').innerHTML = 'Quantidade Pote 1l Mousse de Maracujá: ' + pote1lMousseMaracuja.reduce(somarPote1lMousseMaracuja)
+    let precoFinalMousseMaracuja = pote1lMousseMaracuja.reduce(somarPote1lMousseMaracuja) * precoProdutos.precoPote1L
+    document.getElementById('resultadoPote1lMousseMaracuja').innerHTML = 'Quantidade Pote 1l Mousse de Maracujá (' + pote1lMousseMaracuja.reduce(somarPote1lMousseMaracuja) + ' x ' + 'valor unitário de R$ ' + precoProdutos.precoPote1L + ') = ' + ' R$ ' + precoFinalMousseMaracuja
 }
 
 let pote1lGregoMorango= []
 function quantidadePote1lGregoMorango() {
     pote1lGregoMorango.push(1)
     let somarPote1lGregoMorango = (acumulador, valorAtual) => acumulador + valorAtual
-    document.getElementById('resultadoPote1lGregoMorango').innerHTML = 'Quantidade Pote 1l Grego de Morango: ' + pote1lGregoMorango.reduce(somarPote1lGregoMorango)
+    let precoFinalGregoMorango = pote1lGregoMorango.reduce(somarPote1lGregoMorango) * precoProdutos.precoPote1L
+    document.getElementById('resultadoPote1lGregoMorango').innerHTML = 'Quantidade Pote 1l Grego de Morango (' + pote1lGregoMorango.reduce(somarPote1lGregoMorango) + ' x ' + 'valor unitário de R$ ' + precoProdutos.precoPote1L + ') = ' + ' R$ ' + precoFinalGregoMorango
 }
 
 let pote1lChocolateTrufado= []
 function quantidadePote1lChocolateTrufado() {
     pote1lChocolateTrufado.push(1)
     let somarPote1lChocolateTrufado = (acumulador, valorAtual) => acumulador + valorAtual
-    document.getElementById('resultadoPote1lChocolateTrufado').innerHTML = 'Quantidade Pote 1l Chocolate Trufado: ' + pote1lChocolateTrufado.reduce(somarPote1lChocolateTrufado)
+    let precoFinalChocolateTrufado = pote1lChocolateTrufado.reduce(somarPote1lChocolateTrufado) * precoProdutos.precoPote1L
+    document.getElementById('resultadoPote1lChocolateTrufado').innerHTML = 'Quantidade Pote 1l Chocolate Trufado (' + pote1lChocolateTrufado.reduce(somarPote1lChocolateTrufado) + ' x ' + 'valor unitário de R$ ' + precoProdutos.precoPote1L + ') = ' + ' R$ ' + precoFinalChocolateTrufado
 }
 
 /* POTE DIET */
@@ -495,5 +501,6 @@ let pote1lNapolitanoDiet= []
 function quantidadePote1lNapolitanoDiet() {
     pote1lNapolitanoDiet.push(1)
     let somarPote1lNapolitanoDiet = (acumulador, valorAtual) => acumulador + valorAtual
-    document.getElementById('resultadoPote1lNapolitanoDiet').innerHTML = 'Quantidade Pote 1l Napolitano Diet: ' + pote1lNapolitanoDiet.reduce(somarPote1lNapolitanoDiet)
+    let precoFinalDiet = pote1lNapolitanoDiet.reduce(somarPote1lNapolitanoDiet) * precoProdutos.precoPote1LDiet
+    document.getElementById('resultadoPote1lNapolitanoDiet').innerHTML = 'Quantidade Pote 1l Napolitano Diet (' + pote1lNapolitanoDiet.reduce(somarPote1lNapolitanoDiet) + ' x ' + 'valor unitário de R$ ' + precoProdutos.precoPote1LDiet + ') = ' + ' R$ ' + precoFinalDiet
 }
