@@ -146,70 +146,80 @@ let vivacityAmendoim = []
 function quantidadeVivacityAmendoim() {
     vivacityAmendoim.push(1)
     let somarVivacityAmendoim = (acumulador, valorAtual) => acumulador + valorAtual
-    document.getElementById('resultadoVivacityAmendoim').innerHTML = 'Quantidade Vivacity Amendoim: ' + vivacityAmendoim.reduce(somarVivacityAmendoim)
+    let precoFinalVivacityAmendoim = vivacityAmendoim.reduce(somarVivacityAmendoim) * precoProdutos.precoVivacity
+    document.getElementById('resultadoVivacityAmendoim').innerHTML = 'Quantidade de Vivacity de Amendoim (' + vivacityAmendoim.reduce(somarVivacityAmendoim) + ' x ' + 'valor unitário de R$ ' + precoProdutos.precoVivacity + ') = ' + ' R$ ' + precoFinalVivacityAmendoim
 }
 
 let vivacityChocolate = []
 function quantidadeVivacityChocolate() {
     vivacityChocolate.push(1)
     let somarVivacityChocolate = (acumulador, valorAtual) => acumulador + valorAtual
-    document.getElementById('resultadoVivacityChocolate').innerHTML = 'Quantidade Vivacity Chocolate: ' + vivacityChocolate.reduce(somarVivacityChocolate)
+    let precoFinalVivacityChocolate = vivacityChocolate.reduce(somarVivacityChocolate) * precoProdutos.precoVivacity
+    document.getElementById('resultadoVivacityChocolate').innerHTML = 'Quantidade de Vivacity de Chocolate (' + vivacityChocolate.reduce(somarVivacityChocolate) + ' x ' + 'valor unitário de R$ ' + precoProdutos.precoVivacity + ') = ' + ' R$ ' + precoFinalVivacityChocolate
 }
 
 let vivacityMorango = []
 function quantidadeVivacityMorango() {
     vivacityMorango.push(1)
     let somarVivacityMorango = (acumulador, valorAtual) => acumulador + valorAtual
-    document.getElementById('resultadoVivacityMorango').innerHTML = 'Quantidade Vivacity Morango: ' + vivacityMorango.reduce(somarVivacityMorango)
+    let precoFinalVivacityMorango = vivacityMorango.reduce(somarVivacityMorango) * precoProdutos.precoVivacity
+    document.getElementById('resultadoVivacityMorango').innerHTML = 'Quantidade de Vivacity de Morango (' + vivacityMorango.reduce(somarVivacityMorango) + ' x ' + 'valor unitário de R$ ' + precoProdutos.precoVivacity + ') = ' + ' R$ ' + precoFinalVivacityMorango
 }
 
 let vivacityCoco = []
 function quantidadeVivacityCoco() {
     vivacityCoco.push(1)
     let somarVivacityCoco = (acumulador, valorAtual) => acumulador + valorAtual
-    document.getElementById('resultadoVivacityCoco').innerHTML = 'Quantidade Vivacity Coco: ' + vivacityCoco.reduce(somarVivacityCoco)
+    let precoFinalVivacityCoco = vivacityCoco.reduce(somarVivacityCoco) * precoProdutos.precoVivacity
+    document.getElementById('resultadoVivacityCoco').innerHTML = 'Quantidade de Vivacity de Coco (' + vivacityCoco.reduce(somarVivacityCoco) + ' x ' + 'valor unitário de R$ ' + precoProdutos.precoVivacity + ') = ' + ' R$ ' + precoFinalVivacityCoco
 }
 
 let vivacityLimao = []
 function quantidadeVivacityLimao() {
     vivacityLimao.push(1)
     let somarVivacityLimao = (acumulador, valorAtual) => acumulador + valorAtual
-    document.getElementById('resultadoVivacityLimao').innerHTML = 'Quantidade Vivacity Limão: ' + vivacityLimao.reduce(somarVivacityLimao)
+    let precoFinalVivacityLimao = vivacityLimao.reduce(somarVivacityLimao) * precoProdutos.precoVivacity
+    document.getElementById('resultadoVivacityLimao').innerHTML = 'Quantidade de Vivacity de Limão (' + vivacityLimao.reduce(somarVivacityLimao) + ' x ' + 'valor unitário de R$ ' + precoProdutos.precoVivacity + ') = ' + ' R$ ' + precoFinalVivacityLimao
 }
 
 let vivacityUva = []
 function quantidadeVivacityUva() {
     vivacityUva.push(1)
     let somarVivacityUva = (acumulador, valorAtual) => acumulador + valorAtual
-    document.getElementById('resultadoVivacityUva').innerHTML = 'Quantidade Vivacity Uva: ' + vivacityUva.reduce(somarVivacityUva)
+    let precoFinalVivacityUva = vivacityUva.reduce(somarVivacityUva) * precoProdutos.precoVivacity
+    document.getElementById('resultadoVivacityUva').innerHTML = 'Quantidade de Vivacity de Uva (' + vivacityUva.reduce(somarVivacityUva) + ' x ' + 'valor unitário de R$ ' + precoProdutos.precoVivacity + ') = ' + ' R$ ' + precoFinalVivacityUva
 }
 
 let vivacityGoiaba = []
 function quantidadeVivacityGoiaba() {
     vivacityGoiaba.push(1)
     let somarVivacityGoiaba = (acumulador, valorAtual) => acumulador + valorAtual
-    document.getElementById('resultadoVivacityGoiaba').innerHTML = 'Quantidade Vivacity Goiaba: ' + vivacityGoiaba.reduce(somarVivacityGoiaba)
+    let precoFinalVivacityGoiaba = vivacityGoiaba.reduce(somarVivacityGoiaba) * precoProdutos.precoVivacity
+    document.getElementById('resultadoVivacityGoiaba').innerHTML = 'Quantidade de Vivacity de Goiaba (' + vivacityGoiaba.reduce(somarVivacityGoiaba) + ' x ' + 'valor unitário de R$ ' + precoProdutos.precoVivacity + ') = ' + ' R$ ' + precoFinalVivacityGoiaba
 }
 
 let vivacityLeiteCondensado = []
 function quantidadeVivacityLeiteCondensado() {
     vivacityLeiteCondensado.push(1)
     let somarVivacityLeiteCondensado = (acumulador, valorAtual) => acumulador + valorAtual
-    document.getElementById('resultadoVivacityLeiteCondensado').innerHTML = 'Quantidade Vivacity Leite Condensado: ' + vivacityLeiteCondensado.reduce(somarVivacityLeiteCondensado)
+    let precoFinalVivacityLeiteCondensado = vivacityLeiteCondensado.reduce(somarVivacityLeiteCondensado) * precoProdutos.precoVivacity
+    document.getElementById('resultadoVivacityLeiteCondensado').innerHTML = 'Quantidade de Vivacity de Leite Condensado (' + vivacityLeiteCondensado.reduce(somarVivacityLeiteCondensado) + ' x ' + 'valor unitário de R$ ' + precoProdutos.precoVivacity + ') = ' + ' R$ ' + precoFinalVivacityLeiteCondensado
 }
 
 let vivacityMilhoVerde = []
 function quantidadeVivacityMilhoVerde() {
     vivacityMilhoVerde.push(1)
     let somarVivacityMilhoVerde = (acumulador, valorAtual) => acumulador + valorAtual
-    document.getElementById('resultadoVivacityMilhoVerde').innerHTML = 'Quantidade Vivacity Milho Verde: ' + vivacityMilhoVerde.reduce(somarVivacityMilhoVerde)
+    let precoFinalVivacityMilhoVerde = vivacityMilhoVerde.reduce(somarVivacityMilhoVerde) * precoProdutos.precoVivacity
+    document.getElementById('resultadoVivacityMilhoVerde').innerHTML = 'Quantidade de Vivacity de Milho Verde (' + vivacityMilhoVerde.reduce(somarVivacityMilhoVerde) + ' x ' + 'valor unitário de R$ ' + precoProdutos.precoVivacity + ') = ' + ' R$ ' + precoFinalVivacityMilhoVerde
 }
 
 let vivacityMaracuja = []
 function quantidadeVivacityMaracuja() {
     vivacityMaracuja.push(1)
     let somarVivacityMaracuja = (acumulador, valorAtual) => acumulador + valorAtual
-    document.getElementById('resultadoVivacityMaracuja').innerHTML = 'Quantidade Vivacity Maracujá: ' + vivacityMaracuja.reduce(somarVivacityMaracuja)
+    let precoFinalVivacityMaracuja = vivacityMaracuja.reduce(somarVivacityMaracuja) * precoProdutos.precoVivacity
+    document.getElementById('resultadoVivacityMaracuja').innerHTML = 'Quantidade de Vivacity de Maracujá (' + vivacityMaracuja.reduce(somarVivacityMaracuja) + ' x ' + 'valor unitário de R$ ' + precoProdutos.precoVivacity + ') = ' + ' R$ ' + precoFinalVivacityMaracuja
 }
 
 /* PREMIUM */
@@ -218,14 +228,16 @@ let premiumNapolitano = []
 function quantidadePremiumNapolitano() {
     premiumNapolitano.push(1)
     let somarPremiumNapolitano = (acumulador, valorAtual) => acumulador + valorAtual
-    document.getElementById('resultadoPremiumNapolitano').innerHTML = 'Quantidade Premium Napolitano: ' + premiumNapolitano.reduce(somarPremiumNapolitano)
+    let precoFinalPremiumNapolitano = premiumNapolitano.reduce(somarPremiumNapolitano) * precoProdutos.precoPremium
+    document.getElementById('resultadoPremiumNapolitano').innerHTML = 'Quantidade de Premium Napolitano (' + premiumNapolitano.reduce(somarPremiumNapolitano) + ' x ' + 'valor unitário de R$ ' + precoProdutos.precoPremium + ') = ' + ' R$ ' + precoFinalPremiumNapolitano
 }
 
 let premiumDoceLeite = []
 function quantidadePremiumDoceLeite() {
     premiumDoceLeite.push(1)
     let somarPremiumDoceLeite = (acumulador, valorAtual) => acumulador + valorAtual
-    document.getElementById('resultadoPremiumDoceLeite').innerHTML = 'Quantidade Premium Doce de Leite: ' + premiumDoceLeite.reduce(somarPremiumDoceLeite)
+    let precoFinalPremiumDoceLeite = premiumDoceLeite.reduce(somarPremiumDoceLeite) * precoProdutos.precoPremium
+    document.getElementById('resultadoPremiumDoceLeite').innerHTML = 'Quantidade de Premium Doce de Leite (' + premiumDoceLeite.reduce(somarPremiumDoceLeite) + ' x ' + 'valor unitário de R$ ' + precoProdutos.precoPremium + ') = ' + ' R$ ' + precoFinalPremiumDoceLeite
 }
 
 /* SUNDAE */
@@ -234,14 +246,16 @@ let sundaeMorango = []
 function quantidadeSundaeMorango() {
     sundaeMorango.push(1)
     let somarSundaeMorango = (acumulador, valorAtual) => acumulador + valorAtual
-    document.getElementById('resultadoSundaeMorango').innerHTML = 'Quantidade Sundae de Morango: ' + sundaeMorango.reduce(somarSundaeMorango)
+    let precoFinalSundaeMorango = sundaeMorango.reduce(somarSundaeMorango) * precoProdutos.precoSundae
+    document.getElementById('resultadoSundaeMorango').innerHTML = 'Quantidade de Sundae de Morango (' + sundaeMorango.reduce(somarSundaeMorango) + ' x ' + 'valor unitário de R$ ' + precoProdutos.precoSundae + ') = ' + ' R$ ' + precoFinalSundaeMorango
 }
 
 let sundaeChocolate = []
 function quantidadeSundaeChocolate() {
     sundaeChocolate.push(1)
     let somarSundaeChocolate = (acumulador, valorAtual) => acumulador + valorAtual
-    document.getElementById('resultadoSundaeChocolate').innerHTML = 'Quantidade Sundae de Chocolate: ' + sundaeChocolate.reduce(somarSundaeChocolate)
+    let precoFinalSundaeChocolate = sundaeChocolate.reduce(somarSundaeChocolate) * precoProdutos.precoSundae
+    document.getElementById('resultadoSundaeChocolate').innerHTML = 'Quantidade de Sundae de Chocolate (' + sundaeChocolate.reduce(somarSundaeChocolate) + ' x ' + 'valor unitário de R$ ' + precoProdutos.precoSundae + ') = ' + ' R$ ' + precoFinalSundaeChocolate
 }
 
 /* PABLITO */
@@ -250,7 +264,8 @@ let pablito = []
 function quantidadePablito() {
     pablito.push(1)
     let somarPablito = (acumulador, valorAtual) => acumulador + valorAtual
-    document.getElementById('resultadoPablito').innerHTML = 'Quantidade Pablito: ' + pablito.reduce(somarPablito)
+    let precoFinalPablito = pablito.reduce(somarPablito) * precoProdutos.precoPablito
+    document.getElementById('resultadoPablito').innerHTML = 'Quantidade de Pablitos (' + pablito.reduce(somarPablito) + ' x ' + 'valor unitário de R$ ' + precoProdutos.precoPablito + ') = ' + ' R$ ' + precoFinalPablito
 }
 
 /* CHOCOSONHOS */
@@ -259,35 +274,40 @@ let chocosonhosAmendoky = []
 function quantidadeChocosonhosAmendoky() {
     chocosonhosAmendoky.push(1)
     let somarChocosonhosAmendoky = (acumulador, valorAtual) => acumulador + valorAtual
-    document.getElementById('resultadoChocosonhosAmendoky').innerHTML = 'Quantidade Chocosonhos Amendoky: ' + chocosonhosAmendoky.reduce(somarChocosonhosAmendoky)
+    let precoFinalChocosonhosAmendoky = chocosonhosAmendoky.reduce(somarChocosonhosAmendoky) * precoProdutos.precoChocosonho
+    document.getElementById('resultadoChocosonhosAmendoky').innerHTML = 'Quantidade de Chocosonhos Amendoky (' + chocosonhosAmendoky.reduce(somarChocosonhosAmendoky) + ' x ' + 'valor unitário de R$ ' + precoProdutos.precoChocosonho + ') = ' + ' R$ ' + precoFinalChocosonhosAmendoky
 }
 
 let chocosonhosBrigadeiro = []
 function quantidadeChocosonhosBrigadeiro() {
     chocosonhosBrigadeiro.push(1)
     let somarChocosonhosBrigadeiro = (acumulador, valorAtual) => acumulador + valorAtual
-    document.getElementById('resultadoChocosonhosBrigadeiro').innerHTML = 'Quantidade Chocosonhos Brigadeiro: ' + chocosonhosBrigadeiro.reduce(somarChocosonhosBrigadeiro)
+    let precoFinalChocosonhosBrigadeiro = chocosonhosBrigadeiro.reduce(somarChocosonhosBrigadeiro) * precoProdutos.precoChocosonho
+    document.getElementById('resultadoChocosonhosBrigadeiro').innerHTML = 'Quantidade de Chocosonhos Brigadeiro (' + chocosonhosBrigadeiro.reduce(somarChocosonhosBrigadeiro) + ' x ' + 'valor unitário de R$ ' + precoProdutos.precoChocosonho + ') = ' + ' R$ ' + precoFinalChocosonhosBrigadeiro
 }
 
 let chocosonhosChococo = []
 function quantidadeChocosonhosChococo() {
     chocosonhosChococo.push(1)
     let somarChocosonhosChococo = (acumulador, valorAtual) => acumulador + valorAtual
-    document.getElementById('resultadoChocosonhosChococo').innerHTML = 'Quantidade Chocosonhos Chococo: ' + chocosonhosChococo.reduce(somarChocosonhosChococo)
+    let precoFinalChocosonhosChococo = chocosonhosChococo.reduce(somarChocosonhosChococo) * precoProdutos.precoChocosonho
+    document.getElementById('resultadoChocosonhosChococo').innerHTML = 'Quantidade de Chocosonhos Chococo (' + chocosonhosChococo.reduce(somarChocosonhosChococo) + ' x ' + 'valor unitário de R$ ' + precoProdutos.precoChocosonho + ') = ' + ' R$ ' + precoFinalChocosonhosChococo
 }
 
 let chocosonhosSensacao = []
 function quantidadeChocosonhosSensacao() {
     chocosonhosSensacao.push(1)
     let somarChocosonhosSensacao = (acumulador, valorAtual) => acumulador + valorAtual
-    document.getElementById('resultadoChocosonhosSensacao').innerHTML = 'Quantidade Chocosonhos Sensação: ' + chocosonhosSensacao.reduce(somarChocosonhosSensacao)
+    let precoFinalChocosonhosSensacao = chocosonhosSensacao.reduce(somarChocosonhosSensacao) * precoProdutos.precoChocosonho
+    document.getElementById('resultadoChocosonhosSensacao').innerHTML = 'Quantidade de Chocosonhos Sensação (' + chocosonhosSensacao.reduce(somarChocosonhosSensacao) + ' x ' + 'valor unitário de R$ ' + precoProdutos.precoChocosonho + ') = ' + ' R$ ' + precoFinalChocosonhosSensacao
 }
 
 let chocosonhosEsquimoky = []
 function quantidadeChocosonhosEsquimoky() {
     chocosonhosEsquimoky.push(1)
     let somarChocosonhosEsquimoky = (acumulador, valorAtual) => acumulador + valorAtual
-    document.getElementById('resultadoChocosonhosEsquimoky').innerHTML = 'Quantidade Chocosonhos Esquimoky: ' + chocosonhosEsquimoky.reduce(somarChocosonhosEsquimoky)
+    let precoFinalChocosonhosEsquimoky = chocosonhosEsquimoky.reduce(somarChocosonhosEsquimoky) * precoProdutos.precoChocosonho
+    document.getElementById('resultadoChocosonhosEsquimoky').innerHTML = 'Quantidade de Chocosonhos Esquimoky (' + chocosonhosEsquimoky.reduce(somarChocosonhosEsquimoky) + ' x ' + 'valor unitário de R$ ' + precoProdutos.precoChocosonho + ') = ' + ' R$ ' + precoFinalChocosonhosEsquimoky
 }
 
 /* PALETA */
@@ -296,28 +316,32 @@ let paletaMorango = []
 function quantidadePaletaMorango() {
     paletaMorango.push(1)
     let somarPaletaMorango = (acumulador, valorAtual) => acumulador + valorAtual
-    document.getElementById('resultadoPaletaMorango').innerHTML = 'Quantidade Paletas Morango c/ Leite Condensado: ' + paletaMorango.reduce(somarPaletaMorango)
+    let precoFinalPaletaMorango = paletaMorango.reduce(somarPaletaMorango) * precoProdutos.precoPaleta
+    document.getElementById('resultadoPaletaMorango').innerHTML = 'Quantidade de Paletas de Morango com Leite Condensado (' + paletaMorango.reduce(somarPaletaMorango) + ' x ' + 'valor unitário de R$ ' + precoProdutos.precoPaleta + ') = ' + ' R$ ' + precoFinalPaletaMorango
 }
 
 let paletaBaunilhaCapuccino = []
 function quantidadePaletaBaunilhaCapuccino() {
     paletaBaunilhaCapuccino.push(1)
     let somarPaletaBaunilhaCapuccino = (acumulador, valorAtual) => acumulador + valorAtual
-    document.getElementById('resultadoPaletaBaunilhaCapuccino').innerHTML = 'Quantidade Paletas Baunilha c/ Capuccino: ' + paletaBaunilhaCapuccino.reduce(somarPaletaBaunilhaCapuccino)
+    let precoFinalPaletaBaunilhaCapuccino = paletaBaunilhaCapuccino.reduce(somarPaletaBaunilhaCapuccino) * precoProdutos.precoPaleta
+    document.getElementById('resultadoPaletaBaunilhaCapuccino').innerHTML = 'Quantidade de Paletas de Baunilha com Capuccino (' + paletaBaunilhaCapuccino.reduce(somarPaletaBaunilhaCapuccino) + ' x ' + 'valor unitário de R$ ' + precoProdutos.precoPaleta + ') = ' + ' R$ ' + precoFinalPaletaBaunilhaCapuccino
 }
 
 let paletaChocolateTrufado = []
 function quantidadePaletaChocolateTrufado() {
     paletaChocolateTrufado.push(1)
     let somarPaletaChocolateTrufado = (acumulador, valorAtual) => acumulador + valorAtual
-    document.getElementById('resultadoPaletaChocolateTrufado').innerHTML = 'Quantidade Paletas Chocolate Trufado: ' + paletaChocolateTrufado.reduce(somarPaletaChocolateTrufado)
+    let precoFinalPaletaChocolateTrufado = paletaChocolateTrufado.reduce(somarPaletaChocolateTrufado) * precoProdutos.precoPaleta
+    document.getElementById('resultadoPaletaChocolateTrufado').innerHTML = 'Quantidade de Paletas de Chocolate Trufado (' + paletaChocolateTrufado.reduce(somarPaletaChocolateTrufado) + ' x ' + 'valor unitário de R$ ' + precoProdutos.precoPaleta + ') = ' + ' R$ ' + precoFinalPaletaChocolateTrufado
 }
 
 let paletaMaracujaLeiteCondensado = []
 function quantidadePaletaMaracujaLeiteCondensado() {
     paletaMaracujaLeiteCondensado.push(1)
     let somarPaletaMaracujaLeiteCondensado = (acumulador, valorAtual) => acumulador + valorAtual
-    document.getElementById('resultadoPaletaMaracujaLeiteCondensado').innerHTML = 'Quantidade Paletas Maracujá c/ Leite Condensado: ' + paletaMaracujaLeiteCondensado.reduce(somarPaletaMaracujaLeiteCondensado)
+    let precoFinalPaletaMaracujaLeiteCondensado = paletaMaracujaLeiteCondensado.reduce(somarPaletaMaracujaLeiteCondensado) * precoProdutos.precoPaleta
+    document.getElementById('resultadoPaletaMaracujaLeiteCondensado').innerHTML = 'Quantidade de Paletas de Maracujá com Leite Condensado (' + paletaMaracujaLeiteCondensado.reduce(somarPaletaMaracujaLeiteCondensado) + ' x ' + 'valor unitário de R$ ' + precoProdutos.precoPaleta + ') = ' + ' R$ ' + precoFinalPaletaMaracujaLeiteCondensado
 }
 
 /* CLÁSSICOS */
@@ -326,42 +350,48 @@ let classicosCapuccinoBelga = []
 function quantidadeClassicosCapuccinoBelga() {
     classicosCapuccinoBelga.push(1)
     let somarClassicosCapuccinoBelga = (acumulador, valorAtual) => acumulador + valorAtual
-    document.getElementById('resultadoClassicosCapuccinoBelga').innerHTML = 'Quantidade Clássicos Capuccino com Chocolate Belga: ' + classicosCapuccinoBelga.reduce(somarClassicosCapuccinoBelga)
+    let precoFinalClassicosCapuccinoBelga = classicosCapuccinoBelga.reduce(somarClassicosCapuccinoBelga) * precoProdutos.precoClassico
+    document.getElementById('resultadoClassicosCapuccinoBelga').innerHTML = 'Quantidade de Clássicos de Capuccino com Chocolate Belga (' + classicosCapuccinoBelga.reduce(somarClassicosCapuccinoBelga) + ' x ' + 'valor unitário de R$ ' + precoProdutos.precoClassico + ') = ' + ' R$ ' + precoFinalClassicosCapuccinoBelga
 }
 
 let classicosMousseMaracuja = []
 function quantidadeClassicosMousseMaracuja() {
     classicosMousseMaracuja.push(1)
     let somarClassicosMousseMaracuja = (acumulador, valorAtual) => acumulador + valorAtual
-    document.getElementById('resultadoClassicosMousseMaracuja').innerHTML = 'Quantidade Clássicos Mousse de Maracujá: ' + classicosMousseMaracuja.reduce(somarClassicosMousseMaracuja)
+    let precoFinalClassicosMousseMaracuja = classicosMousseMaracuja.reduce(somarClassicosMousseMaracuja) * precoProdutos.precoClassico
+    document.getElementById('resultadoClassicosMousseMaracuja').innerHTML = 'Quantidade de Clássicos de Mousse de Maracujá (' + classicosMousseMaracuja.reduce(somarClassicosMousseMaracuja) + ' x ' + 'valor unitário de R$ ' + precoProdutos.precoClassico + ') = ' + ' R$ ' + precoFinalClassicosMousseMaracuja
 }
 
 let classicosCastanha = []
 function quantidadeClassicosCastanha() {
     classicosCastanha.push(1)
     let somarClassicosCastanha = (acumulador, valorAtual) => acumulador + valorAtual
-    document.getElementById('resultadoClassicosCastanha').innerHTML = 'Quantidade Clássicos Baunilha c/ Chocolate Belga e Castanha de Cajú: ' + classicosCastanha.reduce(somarClassicosCastanha)
+    let precoFinalClassicosCastanha = classicosCastanha.reduce(somarClassicosCastanha) * precoProdutos.precoClassico
+    document.getElementById('resultadoClassicosCastanha').innerHTML = 'Quantidade de Clássicos de Baunilha com Chocolate Belga e Castanha de Cajú (' + classicosCastanha.reduce(somarClassicosCastanha) + ' x ' + 'valor unitário de R$ ' + precoProdutos.precoClassico + ') = ' + ' R$ ' + precoFinalClassicosCastanha
 }
 
 let classicosTortaAlema = []
 function quantidadeClassicosTortaAlema() {
     classicosTortaAlema.push(1)
     let somarClassicosTortaAlema = (acumulador, valorAtual) => acumulador + valorAtual
-    document.getElementById('resultadoClassicosTortaAlema').innerHTML = 'Quantidade Clássicos Torta Alemã: ' + classicosTortaAlema.reduce(somarClassicosTortaAlema)
+    let precoFinalClassicosTortaAlema = classicosTortaAlema.reduce(somarClassicosTortaAlema) * precoProdutos.precoClassico
+    document.getElementById('resultadoClassicosTortaAlema').innerHTML = 'Quantidade de Clássicos de Torta Alemã (' + classicosTortaAlema.reduce(somarClassicosTortaAlema) + ' x ' + 'valor unitário de R$ ' + precoProdutos.precoClassico + ') = ' + ' R$ ' + precoFinalClassicosTortaAlema
 }
 
 let classicosTortaLimao = []
 function quantidadeClassicosTortaLimao() {
     classicosTortaLimao.push(1)
     let somarClassicosTortaLimao = (acumulador, valorAtual) => acumulador + valorAtual
-    document.getElementById('resultadoClassicosTortaLimao').innerHTML = 'Quantidade Clássicos Torta Limão: ' + classicosTortaLimao.reduce(somarClassicosTortaLimao)
+    let precoFinalClassicosTortaLimao = classicosTortaLimao.reduce(somarClassicosTortaLimao) * precoProdutos.precoClassico
+    document.getElementById('resultadoClassicosTortaLimao').innerHTML = 'Quantidade de Clássicos de Torta de Limão (' + classicosTortaLimao.reduce(somarClassicosTortaLimao) + ' x ' + 'valor unitário de R$ ' + precoProdutos.precoClassico + ') = ' + ' R$ ' + precoFinalClassicosTortaLimao
 }
 
 let classicosBaunilhaBelga = []
 function quantidadeClassicosBaunilhaBelga() {
     classicosBaunilhaBelga.push(1)
     let somarClassicosBaunilhaBelga = (acumulador, valorAtual) => acumulador + valorAtual
-    document.getElementById('resultadoClassicosBaunilhaBelga').innerHTML = 'Quantidade Clássicos Baunilha com Chocolate Belga: ' + classicosBaunilhaBelga.reduce(somarClassicosBaunilhaBelga)
+    let precoFinalClassicosBaunilhaBelga = classicosBaunilhaBelga.reduce(somarClassicosBaunilhaBelga) * precoProdutos.precoClassico
+    document.getElementById('resultadoClassicosBaunilhaBelga').innerHTML = 'Quantidade de Clássicos de Baunilha com Chocolate de Belga (' + classicosBaunilhaBelga.reduce(somarClassicosBaunilhaBelga) + ' x ' + 'valor unitário de R$ ' + precoProdutos.precoClassico + ') = ' + ' R$ ' + precoFinalClassicosBaunilhaBelga
 }
 
 /* POTE 2L */
@@ -370,35 +400,40 @@ let pote2lFlocos = []
 function quantidadePote2lFlocos() {
     pote2lFlocos.push(1)
     let somarPote2lFlocos = (acumulador, valorAtual) => acumulador + valorAtual
-    document.getElementById('resultadoPote2lFlocos').innerHTML = 'Quantidade Pote de 2l de Flocos: ' + pote2lFlocos.reduce(somarPote2lFlocos)
+    let precoFinal2lFlocos = pote2lFlocos.reduce(somarPote2lFlocos) * precoProdutos.precoPote2L
+    document.getElementById('resultadoPote2lFlocos').innerHTML = 'Quantidade Pote de 2l de Flocos (' + pote2lFlocos.reduce(somarPote2lFlocos) + ' x ' + 'valor unitário de R$ ' + precoProdutos.precoPote2L + ') = ' + ' R$ ' + precoFinal2lFlocos
 }
 
 let pote2lChocolate = []
 function quantidadePote2lChocolate() {
     pote2lChocolate.push(1)
     let somarPote2lChocolate = (acumulador, valorAtual) => acumulador + valorAtual
-    document.getElementById('resultadoPote2lChocolate').innerHTML = 'Quantidade Pote de 2l de Chocolate: ' + pote2lChocolate.reduce(somarPote2lChocolate)
+    let precoFinal2lChocolate = pote2lChocolate.reduce(somarPote2lChocolate) * precoProdutos.precoPote2L
+    document.getElementById('resultadoPote2lChocolate').innerHTML = 'Quantidade Pote de 2l de Chocolate (' + pote2lChocolate.reduce(somarPote2lChocolate) + ' x ' + 'valor unitário de R$ ' + precoProdutos.precoPote2L + ') = ' + ' R$ ' + precoFinal2lChocolate
 }
 
 let pote2lNapolitano = []
 function quantidadePote2lNapolitano() {
     pote2lNapolitano.push(1)
     let somarPote2lNapolitano = (acumulador, valorAtual) => acumulador + valorAtual
-    document.getElementById('resultadoPote2lNapolitano').innerHTML = 'Quantidade Pote de 2l de Napolitano: ' + pote2lNapolitano.reduce(somarPote2lNapolitano)
+    let precoFinal2lNapolitano = pote2lNapolitano.reduce(somarPote2lNapolitano) * precoProdutos.precoPote2L
+    document.getElementById('resultadoPote2lNapolitano').innerHTML = 'Quantidade Pote de 2l de Napolitano (' + pote2lNapolitano.reduce(somarPote2lNapolitano) + ' x ' + 'valor unitário de R$ ' + precoProdutos.precoPote2L + ') = ' + ' R$ ' + precoFinal2lNapolitano
 }
 
 let pote2lPassasAoRum = []
 function quantidadePote2lPassasAoRum() {
     pote2lPassasAoRum.push(1)
     let somarPote2lPassasAoRum = (acumulador, valorAtual) => acumulador + valorAtual
-    document.getElementById('resultadoPote2lPassasAoRum').innerHTML = 'Quantidade Pote de 2l de Passas ao Rum: ' + pote2lPassasAoRum.reduce(somarPote2lPassasAoRum)
+    let precoFinal2lPassasAoRum = pote2lPassasAoRum.reduce(somarPote2lPassasAoRum) * precoProdutos.precoPote2L
+    document.getElementById('resultadoPote2lPassasAoRum').innerHTML = 'Quantidade Pote de 2l de Passas ao Rum (' + pote2lPassasAoRum.reduce(somarPote2lPassasAoRum) + ' x ' + 'valor unitário de R$ ' + precoProdutos.precoPote2L + ') = ' + ' R$ ' + precoFinal2lPassasAoRum
 }
 
 let pote2lMorango = []
 function quantidadePote2lMorango() {
     pote2lMorango.push(1)
     let somarPote2lMorango = (acumulador, valorAtual) => acumulador + valorAtual
-    document.getElementById('resultadoPote2lMorango').innerHTML = 'Quantidade Pote de 2l de Morango: ' + pote2lMorango.reduce(somarPote2lMorango)
+    let precoFinal2lMorango = pote2lMorango.reduce(somarPote2lMorango) * precoProdutos.precoPote2L
+    document.getElementById('resultadoPote2lMorango').innerHTML = 'Quantidade Pote de 2l de Morango (' + pote2lMorango.reduce(somarPote2lMorango) + ' x ' + 'valor unitário de R$ ' + precoProdutos.precoPote2L + ') = ' + ' R$ ' + precoFinal2lMorango
 }
 
 /* AÇAÍ */
@@ -407,21 +442,24 @@ let acaiMorango = []
 function quantidadeAcaiMorango() {
     acaiMorango.push(1)
     let somarAcaiMorango = (acumulador, valorAtual) => acumulador + valorAtual
-    document.getElementById('resultadoAcaiMorango').innerHTML = 'Quantidade Açaí de Morango: ' + acaiMorango.reduce(somarAcaiMorango)
+    let precoFinalAcaiMorango = acaiMorango.reduce(somarAcaiMorango) * precoProdutos.precoAcai200Ml
+    document.getElementById('resultadoAcaiMorango').innerHTML = 'Quantidade Pote 200ml de Açaí com Morango (' + acaiMorango.reduce(somarAcaiMorango) + ' x ' + 'valor unitário de R$ ' + precoProdutos.precoAcai200Ml + ') = ' + ' R$ ' + precoFinalAcaiMorango
 }
 
 let acaiBanana = []
 function quantidadeAcaiBanana() {
     acaiBanana.push(1)
     let somarAcaiBanana = (acumulador, valorAtual) => acumulador + valorAtual
-    document.getElementById('resultadoAcaiBanana').innerHTML = 'Quantidade Açaí de Banana: ' + acaiBanana.reduce(somarAcaiBanana)
+    let precoFinalAcaiBanana = acaiBanana.reduce(somarAcaiBanana) * precoProdutos.precoAcai200Ml
+    document.getElementById('resultadoAcaiBanana').innerHTML = 'Quantidade Pote 200ml de Açaí com Banana (' + acaiBanana.reduce(somarAcaiBanana) + ' x ' + 'valor unitário de R$ ' + precoProdutos.precoAcai200Ml + ') = ' + ' R$ ' + precoFinalAcaiBanana
 }
 
 let acaiNatural = []
 function quantidadeAcaiNatural() {
     acaiNatural.push(1)
     let somarAcaiNatural = (acumulador, valorAtual) => acumulador + valorAtual
-    document.getElementById('resultadoAcaiNatural').innerHTML = 'Quantidade Açaí Natural: ' + acaiNatural.reduce(somarAcaiNatural)
+    let precoFinalAcaiNatural = acaiNatural.reduce(somarAcaiNatural) * precoProdutos.precoAcai200Ml
+    document.getElementById('resultadoAcaiNatural').innerHTML = 'Quantidade Pote 200ml de Açaí Natural (' + acaiNatural.reduce(somarAcaiNatural) + ' x ' + 'valor unitário de R$ ' + precoProdutos.precoAcai200Ml + ') = ' + ' R$ ' + precoFinalAcaiNatural
 }
 
 /* POTE 200ML */
@@ -430,38 +468,43 @@ let pote200mlChocolate = []
 function quantidadePote200mlChocolate() {
     pote200mlChocolate.push(1)
     let somarPote200mlChocolate = (acumulador, valorAtual) => acumulador + valorAtual
-    document.getElementById('resultadoPote200mlChocolate').innerHTML = 'Quantidade Pote 200ml Chocolate: ' + pote200mlChocolate.reduce(somarPote200mlChocolate)
+    let precoFinal200mlChocolate = pote200mlChocolate.reduce(somarPote200mlChocolate) * precoProdutos.precoPote200Ml
+    document.getElementById('resultadoPote200mlChocolate').innerHTML = 'Quantidade Pote 200ml de Chocolate (' + pote200mlChocolate.reduce(somarPote200mlChocolate) + ' x ' + 'valor unitário de R$ ' + precoProdutos.precoPote200Ml + ') = ' + ' R$ ' + precoFinal200mlChocolate
 }
 
 let pote200mlFlocos = []
 function quantidadePote200mlFlocos() {
     pote200mlFlocos.push(1)
     let somarPote200mlFlocos = (acumulador, valorAtual) => acumulador + valorAtual
-    document.getElementById('resultadoPote200mlFlocos').innerHTML = 'Quantidade Pote 200ml Flocos: ' + pote200mlFlocos.reduce(somarPote200mlFlocos)
+    let precoFinal200mlFlocos = pote200mlFlocos.reduce(somarPote200mlFlocos) * precoProdutos.precoPote200Ml
+    document.getElementById('resultadoPote200mlFlocos').innerHTML = 'Quantidade Pote 200ml de Flocos (' + pote200mlFlocos.reduce(somarPote200mlFlocos) + ' x ' + 'valor unitário de R$ ' + precoProdutos.precoPote200Ml + ') = ' + ' R$ ' + precoFinal200mlFlocos
 }
 
 let pote200mlNapolitano = []
 function quantidadePote200mlNapolitano() {
     pote200mlNapolitano.push(1)
     let somarPote200mlNapolitano = (acumulador, valorAtual) => acumulador + valorAtual
-    document.getElementById('resultadoPote200mlNapolitano').innerHTML = 'Quantidade Pote 200ml Napolitano: ' + pote200mlNapolitano.reduce(somarPote200mlNapolitano)
+    let precoFinal200mlNapolitano = pote200mlNapolitano.reduce(somarPote200mlNapolitano) * precoProdutos.precoPote200Ml
+    document.getElementById('resultadoPote200mlNapolitano').innerHTML = 'Quantidade Pote 200ml de Napolitano (' + pote200mlNapolitano.reduce(somarPote200mlNapolitano) + ' x ' + 'valor unitário de R$ ' + precoProdutos.precoPote200Ml + ') = ' + ' R$ ' + precoFinal200mlNapolitano
 }
 
 let pote200mlPassasAoRum = []
 function quantidadePote200mlPassasAoRum() {
     pote200mlPassasAoRum.push(1)
     let somarPote200mlPassasAoRum = (acumulador, valorAtual) => acumulador + valorAtual
-    document.getElementById('resultadoPote200mlPassasAoRum').innerHTML = 'Quantidade Pote 200ml de Passas ao Rum: ' + pote200mlPassasAoRum.reduce(somarPote200mlPassasAoRum)
+    let precoFinal200mlPassasAoRum = pote200mlPassasAoRum.reduce(somarPote200mlPassasAoRum) * precoProdutos.precoPote200Ml
+    document.getElementById('resultadoPote200mlPassasAoRum').innerHTML = 'Quantidade Pote 200ml de Passas ao Rum (' + pote200mlPassasAoRum.reduce(somarPote200mlPassasAoRum) + ' x ' + 'valor unitário de R$ ' + precoProdutos.precoPote200Ml + ') = ' + ' R$ ' + precoFinal200mlPassasAoRum
 }
 
-let pote200mlMorango= []
+let pote200mlMorango = []
 function quantidadePote200mlMorango() {
     pote200mlMorango.push(1)
     let somarPote200mlMorango = (acumulador, valorAtual) => acumulador + valorAtual
-    document.getElementById('resultadoPote200mlMorango').innerHTML = 'Quantidade Pote 200ml de Morango: ' + pote200mlMorango.reduce(somarPote200mlMorango)
+    let precoFinal200mlMorango = pote200mlMorango.reduce(somarPote200mlMorango) * precoProdutos.precoPote200Ml
+    document.getElementById('resultadoPote200mlMorango').innerHTML = 'Quantidade Pote 200ml de Morango (' + pote200mlMorango.reduce(somarPote200mlMorango) + ' x ' + 'valor unitário de R$ ' + precoProdutos.precoPote200Ml + ') = ' + ' R$ ' + precoFinal200mlMorango
 }
 
-let pote200mlMaracuja= []
+let pote200mlMaracuja = []
 function quantidadePote200mlMaracuja() {
     pote200mlMaracuja.push(1)
     let somarPote200mlMaracuja = (acumulador, valorAtual) => acumulador + valorAtual
@@ -471,7 +514,7 @@ function quantidadePote200mlMaracuja() {
 
 /* POTE 1L */
 
-let pote1lMousseMaracuja= []
+let pote1lMousseMaracuja = []
 function quantidadePote1lMousseMaracuja() {
     pote1lMousseMaracuja.push(1)
     let somarPote1lMousseMaracuja = (acumulador, valorAtual) => acumulador + valorAtual
@@ -479,7 +522,7 @@ function quantidadePote1lMousseMaracuja() {
     document.getElementById('resultadoPote1lMousseMaracuja').innerHTML = 'Quantidade Pote 1l Mousse de Maracujá (' + pote1lMousseMaracuja.reduce(somarPote1lMousseMaracuja) + ' x ' + 'valor unitário de R$ ' + precoProdutos.precoPote1L + ') = ' + ' R$ ' + precoFinalMousseMaracuja
 }
 
-let pote1lGregoMorango= []
+let pote1lGregoMorango = []
 function quantidadePote1lGregoMorango() {
     pote1lGregoMorango.push(1)
     let somarPote1lGregoMorango = (acumulador, valorAtual) => acumulador + valorAtual
@@ -487,7 +530,7 @@ function quantidadePote1lGregoMorango() {
     document.getElementById('resultadoPote1lGregoMorango').innerHTML = 'Quantidade Pote 1l Grego de Morango (' + pote1lGregoMorango.reduce(somarPote1lGregoMorango) + ' x ' + 'valor unitário de R$ ' + precoProdutos.precoPote1L + ') = ' + ' R$ ' + precoFinalGregoMorango
 }
 
-let pote1lChocolateTrufado= []
+let pote1lChocolateTrufado = []
 function quantidadePote1lChocolateTrufado() {
     pote1lChocolateTrufado.push(1)
     let somarPote1lChocolateTrufado = (acumulador, valorAtual) => acumulador + valorAtual
@@ -497,7 +540,7 @@ function quantidadePote1lChocolateTrufado() {
 
 /* POTE DIET */
 
-let pote1lNapolitanoDiet= []
+let pote1lNapolitanoDiet = []
 function quantidadePote1lNapolitanoDiet() {
     pote1lNapolitanoDiet.push(1)
     let somarPote1lNapolitanoDiet = (acumulador, valorAtual) => acumulador + valorAtual
