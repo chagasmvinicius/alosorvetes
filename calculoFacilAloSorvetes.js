@@ -259,8 +259,8 @@ function quantidadeSundaeMorango() {
     sundaeMorango.push(1)
     let somarSundaeMorango = (acumulador, valorAtual) => acumulador + valorAtual
     let quantidadeCombos = Math.floor(sundaeMorango.reduce(somarSundaeMorango) / 6)
-    let precoFinalSundaeMorango = (sundaeMorango.reduce(somarSundaeMorango) * precoProdutos.precoSundae) - (precoProdutos.precoSundae) * quantidadeCombos
-    document.getElementById('resultadoSundaeMorango').innerHTML = 'Quantidade de Sundae de Morango: ' + sundaeMorango.reduce(somarSundaeMorango) + ' x ' + 'valor unitário de R$ ' + precoProdutos.precoSundae + ' (brinde não entra no cáculo) = ' + ' R$ ' + precoFinalSundaeMorango + ' com ' + quantidadeCombos + ' de brinde;'
+    let precoFinalSundaeMorango = (sundaeMorango.reduce(somarSundaeMorango) * precoProdutos.precoSundae)
+    document.getElementById('resultadoSundaeMorango').innerHTML = 'Quantidade de Sundae de Morango: ' + sundaeMorango.reduce(somarSundaeMorango) + ' x ' + 'valor unitário de R$ ' + precoProdutos.precoSundae + ' (não possui combo) = ' + ' R$ ' + precoFinalSundaeMorango
 }
 
 let sundaeChocolate = []
@@ -268,8 +268,8 @@ function quantidadeSundaeChocolate() {
     sundaeChocolate.push(1)
     let somarSundaeChocolate = (acumulador, valorAtual) => acumulador + valorAtual
     let quantidadeCombos = Math.floor(sundaeChocolate.reduce(somarSundaeChocolate) / 6)
-    let precoFinalSundaeChocolate = (sundaeChocolate.reduce(somarSundaeChocolate) * precoProdutos.precoSundae) - (precoProdutos.precoSundae) * quantidadeCombos
-    document.getElementById('resultadoSundaeChocolate').innerHTML = 'Quantidade de Sundae de Chocolate: ' + sundaeChocolate.reduce(somarSundaeChocolate) + ' x ' + 'valor unitário de R$ ' + precoProdutos.precoSundae + ' (brinde não entra no cáculo) = ' + ' R$ ' + precoFinalSundaeChocolate + ' com ' + quantidadeCombos + ' de brinde;'
+    let precoFinalSundaeChocolate = (sundaeChocolate.reduce(somarSundaeChocolate) * precoProdutos.precoSundae)
+    document.getElementById('resultadoSundaeChocolate').innerHTML = 'Quantidade de Sundae de Chocolate: ' + sundaeChocolate.reduce(somarSundaeChocolate) + ' x ' + 'valor unitário de R$ ' + precoProdutos.precoSundae + ' (não possui combo) = ' + ' R$ ' + precoFinalSundaeChocolate
 }
 
 /* PABLITO */
@@ -279,8 +279,8 @@ function quantidadePablito() {
     pablito.push(1)
     let somarPablito = (acumulador, valorAtual) => acumulador + valorAtual
     let quantidadeCombos = Math.floor(pablito.reduce(somarPablito) / 6)
-    let precoFinalPablito = (pablito.reduce(somarPablito) * precoProdutos.precoPablito) - (precoProdutos.precoPablito) * quantidadeCombos
-    document.getElementById('resultadoPablito').innerHTML = 'Quantidade de Pablito: ' + pablito.reduce(somarPablito) + ' x ' + 'valor unitário de R$ ' + precoProdutos.precoPablito + ' (brinde não entra no cáculo) = ' + ' R$ ' + precoFinalPablito + ' com ' + quantidadeCombos + ' de brinde;'
+    let precoFinalPablito = (pablito.reduce(somarPablito) * precoProdutos.precoPablito)
+    document.getElementById('resultadoPablito').innerHTML = 'Quantidade de Pablito: ' + pablito.reduce(somarPablito) + ' x ' + 'valor unitário de R$ ' + precoProdutos.precoPablito + ' (não possui combo) = ' + ' R$ ' + precoFinalPablito
 }
 
 /* CHOCOSONHOS */
@@ -337,8 +337,8 @@ function quantidadePaletaMorango() {
     paletaMorango.push(1)
     let somarPaletaMorango = (acumulador, valorAtual) => acumulador + valorAtual
     let quantidadeCombos = Math.floor(paletaMorango.reduce(somarPaletaMorango) / 6)
-    let precoFinalPaletaMorango = (paletaMorango.reduce(somarPaletaMorango) * precoProdutos.precoPaleta) - (precoProdutos.precoPaleta) * quantidadeCombos
-    document.getElementById('resultadoPaletaMorango').innerHTML = 'Quantidade de Paletas de Morango: ' + paletaMorango.reduce(somarPaletaMorango) + ' x ' + 'valor unitário de R$ ' + precoProdutos.precoPaleta + ' (brinde não entra no cáculo) = ' + ' R$ ' + precoFinalPaletaMorango + ' com ' + quantidadeCombos + ' de brinde;'
+    let precoFinalPaletaMorango = (paletaMorango.reduce(somarPaletaMorango) * precoProdutos.precoPaleta)
+    document.getElementById('resultadoPaletaMorango').innerHTML = 'Quantidade de Paletas de Morango c/ Leite Condensado: ' + paletaMorango.reduce(somarPaletaMorango) + ' x ' + 'valor unitário de R$ ' + precoProdutos.precoPaleta + ' (não possui combo) = ' + ' R$ ' + precoFinalPaletaMorango
 }
 
 let paletaBaunilhaCapuccino = []
@@ -346,8 +346,8 @@ function quantidadePaletaBaunilhaCapuccino() {
     paletaBaunilhaCapuccino.push(1)
     let somarPaletaBaunilhaCapuccino = (acumulador, valorAtual) => acumulador + valorAtual
     let quantidadeCombos = Math.floor(paletaBaunilhaCapuccino.reduce(somarPaletaBaunilhaCapuccino) / 6)
-    let precoFinalPaletaBaunilhaCapuccino = (paletaBaunilhaCapuccino.reduce(somarPaletaBaunilhaCapuccino) * precoProdutos.precoPaleta) - (precoProdutos.precoPaleta) * quantidadeCombos
-    document.getElementById('resultadoPaletaBaunilhaCapuccino').innerHTML = 'Quantidade de Paletas de Baunilha com Capuccino: ' + paletaBaunilhaCapuccino.reduce(somarPaletaBaunilhaCapuccino) + ' x ' + 'valor unitário de R$ ' + precoProdutos.precoPaleta + ' (brinde não entra no cáculo) = ' + ' R$ ' + precoFinalPaletaBaunilhaCapuccino + ' com ' + quantidadeCombos + ' de brinde;'
+    let precoFinalPaletaBaunilhaCapuccino = (paletaBaunilhaCapuccino.reduce(somarPaletaBaunilhaCapuccino) * precoProdutos.precoPaleta)
+    document.getElementById('resultadoPaletaBaunilhaCapuccino').innerHTML = 'Quantidade de Paletas de Baunilha com Capuccino: ' + paletaBaunilhaCapuccino.reduce(somarPaletaBaunilhaCapuccino) + ' x ' + 'valor unitário de R$ ' + precoProdutos.precoPaleta + ' (não possui combo) = ' + ' R$ ' + precoFinalPaletaBaunilhaCapuccino
 }
 
 let paletaChocolateTrufado = []
@@ -355,8 +355,8 @@ function quantidadePaletaChocolateTrufado() {
     paletaChocolateTrufado.push(1)
     let somarPaletaChocolateTrufado = (acumulador, valorAtual) => acumulador + valorAtual
     let quantidadeCombos = Math.floor(paletaChocolateTrufado.reduce(somarPaletaChocolateTrufado) / 6)
-    let precoFinalPaletaChocolateTrufado = (paletaChocolateTrufado.reduce(somarPaletaChocolateTrufado) * precoProdutos.precoPaleta) - (precoProdutos.precoPaleta) * quantidadeCombos
-    document.getElementById('resultadoPaletaChocolateTrufado').innerHTML = 'Quantidade de Paletas de Chocolate Trufado: ' + paletaChocolateTrufado.reduce(somarPaletaChocolateTrufado) + ' x ' + 'valor unitário de R$ ' + precoProdutos.precoPaleta + ' (brinde não entra no cáculo) = ' + ' R$ ' + precoFinalPaletaChocolateTrufado + ' com ' + quantidadeCombos + ' de brinde;'
+    let precoFinalPaletaChocolateTrufado = (paletaChocolateTrufado.reduce(somarPaletaChocolateTrufado) * precoProdutos.precoPaleta)
+    document.getElementById('resultadoPaletaChocolateTrufado').innerHTML = 'Quantidade de Paletas de Chocolate Trufado: ' + paletaChocolateTrufado.reduce(somarPaletaChocolateTrufado) + ' x ' + 'valor unitário de R$ ' + precoProdutos.precoPaleta + ' (não possui combo) = ' + ' R$ ' + precoFinalPaletaChocolateTrufado
 }
 
 let paletaMaracujaLeiteCondensado = []
@@ -364,8 +364,8 @@ function quantidadePaletaMaracujaLeiteCondensado() {
     paletaMaracujaLeiteCondensado.push(1)
     let somarPaletaMaracujaLeiteCondensado = (acumulador, valorAtual) => acumulador + valorAtual
     let quantidadeCombos = Math.floor(paletaMaracujaLeiteCondensado.reduce(somarPaletaMaracujaLeiteCondensado) / 6)
-    let precoFinalPaletaMaracujaLeiteCondensado = (paletaMaracujaLeiteCondensado.reduce(somarPaletaMaracujaLeiteCondensado) * precoProdutos.precoPaleta) - (precoProdutos.precoPaleta) * quantidadeCombos
-    document.getElementById('resultadoPaletaMaracujaLeiteCondensado').innerHTML = 'Quantidade de Paletas de Maracujá com Leite Condensado: ' + paletaMaracujaLeiteCondensado.reduce(somarPaletaMaracujaLeiteCondensado) + ' x ' + 'valor unitário de R$ ' + precoProdutos.precoPaleta + ' (brinde não entra no cáculo) = ' + ' R$ ' + precoFinalPaletaMaracujaLeiteCondensado + ' com ' + quantidadeCombos + ' de brinde;'
+    let precoFinalPaletaMaracujaLeiteCondensado = (paletaMaracujaLeiteCondensado.reduce(somarPaletaMaracujaLeiteCondensado) * precoProdutos.precoPaleta)
+    document.getElementById('resultadoPaletaMaracujaLeiteCondensado').innerHTML = 'Quantidade de Paletas de Maracujá c/ Leite Condensado: ' + paletaMaracujaLeiteCondensado.reduce(somarPaletaMaracujaLeiteCondensado) + ' x ' + 'valor unitário de R$ ' + precoProdutos.precoPaleta + ' (não possui combo) = ' + ' R$ ' + precoFinalPaletaMaracujaLeiteCondensado
 }
 
 /* CLÁSSICOS */
@@ -431,8 +431,8 @@ function quantidadePote2lFlocos() {
     pote2lFlocos.push(1)
     let somarPote2lFlocos = (acumulador, valorAtual) => acumulador + valorAtual
     let quantidadeCombos = Math.floor(pote2lFlocos.reduce(somarPote2lFlocos) / 6)
-    let precoFinal2lFlocos = (pote2lFlocos.reduce(somarPote2lFlocos) * precoProdutos.precoPote2L) - (precoProdutos.precoPote2L) * quantidadeCombos
-    document.getElementById('resultadoPote2lFlocos').innerHTML = 'Quantidade de Pote de 2L de Flocos: ' + pote2lFlocos.reduce(somarPote2lFlocos) + ' x ' + 'valor unitário de R$ ' + precoProdutos.precoPote2L + ' (brinde não entra no cáculo) = ' + ' R$ ' + precoFinal2lFlocos + ' com ' + quantidadeCombos + ' de brinde;'
+    let precoFinal2lFlocos = (pote2lFlocos.reduce(somarPote2lFlocos) * precoProdutos.precoPote2L)
+    document.getElementById('resultadoPote2lFlocos').innerHTML = 'Quantidade de Pote de 2L de Flocos: ' + pote2lFlocos.reduce(somarPote2lFlocos) + ' x ' + 'valor unitário de R$ ' + precoProdutos.precoPote2L + ' (não possui combo) = ' + ' R$ ' + precoFinal2lFlocos
 }
 
 let pote2lChocolate = []
@@ -440,8 +440,8 @@ function quantidadePote2lChocolate() {
     pote2lChocolate.push(1)
     let somarPote2lChocolate = (acumulador, valorAtual) => acumulador + valorAtual
     let quantidadeCombos = Math.floor(pote2lChocolate.reduce(somarPote2lChocolate) / 6)
-    let precoFinal2lChocolate = (pote2lChocolate.reduce(somarPote2lChocolate) * precoProdutos.precoPote2L) - (precoProdutos.precoPote2L) * quantidadeCombos
-    document.getElementById('resultadoPote2lChocolate').innerHTML = 'Quantidade de Pote de 2L de Chocolate: ' + pote2lChocolate.reduce(somarPote2lChocolate) + ' x ' + 'valor unitário de R$ ' + precoProdutos.precoPote2L + ' (brinde não entra no cáculo) = ' + ' R$ ' + precoFinal2lChocolate + ' com ' + quantidadeCombos + ' de brinde;'
+    let precoFinal2lChocolate = (pote2lChocolate.reduce(somarPote2lChocolate) * precoProdutos.precoPote2L)
+    document.getElementById('resultadoPote2lChocolate').innerHTML = 'Quantidade de Pote de 2L de Chocolate: ' + pote2lChocolate.reduce(somarPote2lChocolate) + ' x ' + 'valor unitário de R$ ' + precoProdutos.precoPote2L + ' (não possui combo) = ' + ' R$ ' + precoFinal2lChocolate
 }
 
 let pote2lNapolitano = []
@@ -449,8 +449,8 @@ function quantidadePote2lNapolitano() {
     pote2lNapolitano.push(1)
     let somarPote2lNapolitano = (acumulador, valorAtual) => acumulador + valorAtual
     let quantidadeCombos = Math.floor(pote2lNapolitano.reduce(somarPote2lNapolitano) / 6)
-    let precoFinal2lNapolitano = (pote2lNapolitano.reduce(somarPote2lNapolitano) * precoProdutos.precoPote2L) - (precoProdutos.precoPote2L) * quantidadeCombos
-    document.getElementById('resultadoPote2lNapolitano').innerHTML = 'Quantidade de Pote de 2L de Napolitano: ' + pote2lNapolitano.reduce(somarPote2lNapolitano) + ' x ' + 'valor unitário de R$ ' + precoProdutos.precoPote2L + ' (brinde não entra no cáculo) = ' + ' R$ ' + precoFinal2lNapolitano + ' com ' + quantidadeCombos + ' de brinde;'
+    let precoFinal2lNapolitano = (pote2lNapolitano.reduce(somarPote2lNapolitano) * precoProdutos.precoPote2L)
+    document.getElementById('resultadoPote2lNapolitano').innerHTML = 'Quantidade de Pote de 2L de Napolitano: ' + pote2lNapolitano.reduce(somarPote2lNapolitano) + ' x ' + 'valor unitário de R$ ' + precoProdutos.precoPote2L + ' (não possui combo) = ' + ' R$ ' + precoFinal2lNapolitano
 }
 
 let pote2lPassasAoRum = []
@@ -458,8 +458,8 @@ function quantidadePote2lPassasAoRum() {
     pote2lPassasAoRum.push(1)
     let somarPote2lPassasAoRum = (acumulador, valorAtual) => acumulador + valorAtual
     let quantidadeCombos = Math.floor(pote2lPassasAoRum.reduce(somarPote2lPassasAoRum) / 6)
-    let precoFinal2lPassasAoRum = (pote2lPassasAoRum.reduce(somarPote2lPassasAoRum) * precoProdutos.precoPote2L) - (precoProdutos.precoPote2L) * quantidadeCombos
-    document.getElementById('resultadoPote2lPassasAoRum').innerHTML = 'Quantidade de Pote de 2L de Passas ao Rum: ' + pote2lPassasAoRum.reduce(somarPote2lPassasAoRum) + ' x ' + 'valor unitário de R$ ' + precoProdutos.precoPote2L + ' (brinde não entra no cáculo) = ' + ' R$ ' + precoFinal2lPassasAoRum + ' com ' + quantidadeCombos + ' de brinde;'
+    let precoFinal2lPassasAoRum = (pote2lPassasAoRum.reduce(somarPote2lPassasAoRum) * precoProdutos.precoPote2L)
+    document.getElementById('resultadoPote2lPassasAoRum').innerHTML = 'Quantidade de Pote de 2L de Passas ao Rum: ' + pote2lPassasAoRum.reduce(somarPote2lPassasAoRum) + ' x ' + 'valor unitário de R$ ' + precoProdutos.precoPote2L + ' (não possui combo) = ' + ' R$ ' + precoFinal2lPassasAoRum
 }
 
 let pote2lMorango = []
@@ -467,8 +467,8 @@ function quantidadePote2lMorango() {
     pote2lMorango.push(1)
     let somarPote2lMorango = (acumulador, valorAtual) => acumulador + valorAtual
     let quantidadeCombos = Math.floor(pote2lMorango.reduce(somarPote2lMorango) / 6)
-    let precoFinal2lMorango = (pote2lMorango.reduce(somarPote2lMorango) * precoProdutos.precoPote2L) - (precoProdutos.precoPote2L) * quantidadeCombos
-    document.getElementById('resultadoPote2lMorango').innerHTML = 'Quantidade de Pote de 2L de Morango: ' + pote2lMorango.reduce(somarPote2lMorango) + ' x ' + 'valor unitário de R$ ' + precoProdutos.precoPote2L + ' (brinde não entra no cáculo) = ' + ' R$ ' + precoFinal2lMorango + ' com ' + quantidadeCombos + ' de brinde;'
+    let precoFinal2lMorango = (pote2lMorango.reduce(somarPote2lMorango) * precoProdutos.precoPote2L)
+    document.getElementById('resultadoPote2lMorango').innerHTML = 'Quantidade de Pote de 2L de Morango: ' + pote2lMorango.reduce(somarPote2lMorango) + ' x ' + 'valor unitário de R$ ' + precoProdutos.precoPote2L + ' (não possui combo) = ' + ' R$ ' + precoFinal2lMorango
 }
 
 /* AÇAÍ */
@@ -478,8 +478,8 @@ function quantidadeAcaiMorango() {
     acaiMorango.push(1)
     let somarAcaiMorango = (acumulador, valorAtual) => acumulador + valorAtual
     let quantidadeCombos = Math.floor(acaiMorango.reduce(somarAcaiMorango) / 6)
-    let precoFinalAcaiMorango = (acaiMorango.reduce(somarAcaiMorango) * precoProdutos.precoAcai200Ml) - (precoProdutos.precoAcai200Ml) * quantidadeCombos
-    document.getElementById('resultadoAcaiMorango').innerHTML = 'Quantidade de Açaí 200ml de Morango: ' + acaiMorango.reduce(somarAcaiMorango) + ' x ' + 'valor unitário de R$ ' + precoProdutos.precoAcai200Ml + ' (brinde não entra no cáculo) = ' + ' R$ ' + precoFinalAcaiMorango + ' com ' + quantidadeCombos + ' de brinde;'
+    let precoFinalAcaiMorango = (acaiMorango.reduce(somarAcaiMorango) * precoProdutos.precoAcai200Ml)
+    document.getElementById('resultadoAcaiMorango').innerHTML = 'Quantidade de Açaí 200ml de Morango: ' + acaiMorango.reduce(somarAcaiMorango) + ' x ' + 'valor unitário de R$ ' + precoProdutos.precoAcai200Ml + ' (não possui combo) = ' + ' R$ ' + precoFinalAcaiMorango
 }
 
 let acaiBanana = []
@@ -487,8 +487,8 @@ function quantidadeAcaiBanana() {
     acaiBanana.push(1)
     let somarAcaiBanana = (acumulador, valorAtual) => acumulador + valorAtual
     let quantidadeCombos = Math.floor(acaiBanana.reduce(somarAcaiBanana) / 6)
-    let precoFinalAcaiBanana = (acaiBanana.reduce(somarAcaiBanana) * precoProdutos.precoAcai200Ml) - (precoProdutos.precoAcai200Ml) * quantidadeCombos
-    document.getElementById('resultadoAcaiBanana').innerHTML = 'Quantidade de Açaí 200ml de Banana: ' + acaiBanana.reduce(somarAcaiBanana) + ' x ' + 'valor unitário de R$ ' + precoProdutos.precoAcai200Ml + ' (brinde não entra no cáculo) = ' + ' R$ ' + precoFinalAcaiBanana + ' com ' + quantidadeCombos + ' de brinde;'
+    let precoFinalAcaiBanana = (acaiBanana.reduce(somarAcaiBanana) * precoProdutos.precoAcai200Ml)
+    document.getElementById('resultadoAcaiBanana').innerHTML = 'Quantidade de Açaí 200ml de Banana: ' + acaiBanana.reduce(somarAcaiBanana) + ' x ' + 'valor unitário de R$ ' + precoProdutos.precoAcai200Ml + ' (não possui combo) = ' + ' R$ ' + precoFinalAcaiBanana
 }
 
 let acaiNatural = []
@@ -496,8 +496,8 @@ function quantidadeAcaiNatural() {
     acaiNatural.push(1)
     let somarAcaiNatural = (acumulador, valorAtual) => acumulador + valorAtual
     let quantidadeCombos = Math.floor(acaiNatural.reduce(somarAcaiNatural) / 6)
-    let precoFinalAcaiNatural = (acaiNatural.reduce(somarAcaiNatural) * precoProdutos.precoAcai200Ml) - (precoProdutos.precoAcai200Ml) * quantidadeCombos
-    document.getElementById('resultadoAcaiNatural').innerHTML = 'Quantidade de Açaí 200ml Natural: ' + acaiNatural.reduce(somarAcaiNatural) + ' x ' + 'valor unitário de R$ ' + precoProdutos.precoAcai200Ml + ' (brinde não entra no cáculo) = ' + ' R$ ' + precoFinalAcaiNatural + ' com ' + quantidadeCombos + ' de brinde;'
+    let precoFinalAcaiNatural = (acaiNatural.reduce(somarAcaiNatural) * precoProdutos.precoAcai200Ml)
+    document.getElementById('resultadoAcaiNatural').innerHTML = 'Quantidade de Açaí 200ml Natural: ' + acaiNatural.reduce(somarAcaiNatural) + ' x ' + 'valor unitário de R$ ' + precoProdutos.precoAcai200Ml + ' (não possui combo) = ' + ' R$ ' + precoFinalAcaiNatural
 }
 
 /* POTE 200ML */
@@ -507,8 +507,8 @@ function quantidadePote200mlChocolate() {
     pote200mlChocolate.push(1)
     let somarPote200mlChocolate = (acumulador, valorAtual) => acumulador + valorAtual
     let quantidadeCombos = Math.floor(pote200mlChocolate.reduce(somarPote200mlChocolate) / 6)
-    let precoFinal200mlChocolate = (pote200mlChocolate.reduce(somarPote200mlChocolate) * precoProdutos.precoPote200Ml) - (precoProdutos.precoPote200Ml) * quantidadeCombos
-    document.getElementById('resultadoPote200mlChocolate').innerHTML = 'Quantidade de Potes de 200ml de Chocolate: ' + pote200mlChocolate.reduce(somarPote200mlChocolate) + ' x ' + 'valor unitário de R$ ' + precoProdutos.precoPote200Ml + ' (brinde não entra no cáculo) = ' + ' R$ ' + precoFinal200mlChocolate + ' com ' + quantidadeCombos + ' de brinde;'
+    let precoFinal200mlChocolate = (pote200mlChocolate.reduce(somarPote200mlChocolate) * precoProdutos.precoPote200Ml)
+    document.getElementById('resultadoPote200mlChocolate').innerHTML = 'Quantidade de Potes de 200ml de Chocolate: ' + pote200mlChocolate.reduce(somarPote200mlChocolate) + ' x ' + 'valor unitário de R$ ' + precoProdutos.precoPote200Ml + ' (não possui combo) = ' + ' R$ ' + precoFinal200mlChocolate
 }
 
 let pote200mlFlocos = []
@@ -516,8 +516,8 @@ function quantidadePote200mlFlocos() {
     pote200mlFlocos.push(1)
     let somarPote200mlFlocos = (acumulador, valorAtual) => acumulador + valorAtual
     let quantidadeCombos = Math.floor(pote200mlFlocos.reduce(somarPote200mlFlocos) / 6)
-    let precoFinal200mlFlocos = (pote200mlFlocos.reduce(somarPote200mlFlocos) * precoProdutos.precoPote200Ml) - (precoProdutos.precoPote200Ml) * quantidadeCombos
-    document.getElementById('resultadoPote200mlChocolateFlocos').innerHTML = 'Quantidade de Potes de 200ml de Flocos: ' + pote200mlFlocos.reduce(somarPote200mlFlocos) + ' x ' + 'valor unitário de R$ ' + precoProdutos.precoPote200Ml + ' (brinde não entra no cáculo) = ' + ' R$ ' + precoFinal200mlFlocos + ' com ' + quantidadeCombos + ' de brinde;'
+    let precoFinal200mlFlocos = (pote200mlFlocos.reduce(somarPote200mlFlocos) * precoProdutos.precoPote200Ml)
+    document.getElementById('resultadoPote200mlFlocos').innerHTML = 'Quantidade de Potes de 200ml de Flocos: ' + pote200mlFlocos.reduce(somarPote200mlFlocos) + ' x ' + 'valor unitário de R$ ' + precoProdutos.precoPote200Ml + ' (não possui combo) = ' + ' R$ ' + precoFinal200mlFlocos
 }
 
 let pote200mlNapolitano = []
@@ -525,8 +525,8 @@ function quantidadePote200mlNapolitano() {
     pote200mlNapolitano.push(1)
     let somarPote200mlNapolitano = (acumulador, valorAtual) => acumulador + valorAtual
     let quantidadeCombos = Math.floor(pote200mlNapolitano.reduce(somarPote200mlNapolitano) / 6)
-    let precoFinal200mlNapolitano = (pote200mlNapolitano.reduce(somarPote200mlNapolitano) * precoProdutos.precoPote200Ml) - (precoProdutos.precoPote200Ml) * quantidadeCombos
-    document.getElementById('resultadoPote200mlNapolitano').innerHTML = 'Quantidade de Potes de 200ml de Napolitano: ' + pote200mlNapolitano.reduce(somarPote200mlNapolitano) + ' x ' + 'valor unitário de R$ ' + precoProdutos.precoPote200Ml + ' (brinde não entra no cáculo) = ' + ' R$ ' + precoFinal200mlNapolitano + ' com ' + quantidadeCombos + ' de brinde;'
+    let precoFinal200mlNapolitano = (pote200mlNapolitano.reduce(somarPote200mlNapolitano) * precoProdutos.precoPote200Ml)
+    document.getElementById('resultadoPote200mlNapolitano').innerHTML = 'Quantidade de Potes de 200ml de Napolitano: ' + pote200mlNapolitano.reduce(somarPote200mlNapolitano) + ' x ' + 'valor unitário de R$ ' + precoProdutos.precoPote200Ml + ' (não possui combo) = ' + ' R$ ' + precoFinal200mlNapolitano
 }
 
 let pote200mlPassasAoRum = []
@@ -534,8 +534,8 @@ function quantidadePote200mlPassasAoRum() {
     pote200mlPassasAoRum.push(1)
     let somarPote200mlPassasAoRum = (acumulador, valorAtual) => acumulador + valorAtual
     let quantidadeCombos = Math.floor(pote200mlPassasAoRum.reduce(somarPote200mlPassasAoRum) / 6)
-    let precoFinal200mlPassasAoRum = (pote200mlPassasAoRum.reduce(somarPote200mlPassasAoRum) * precoProdutos.precoPote200Ml) - (precoProdutos.precoPote200Ml) * quantidadeCombos
-    document.getElementById('resultadoPote200mlPassasAoRum').innerHTML = 'Quantidade de Potes de 200ml de Passas ao Rum: ' + pote200mlPassasAoRum.reduce(somarPote200mlPassasAoRum) + ' x ' + 'valor unitário de R$ ' + precoProdutos.precoPote200Ml + ' (brinde não entra no cáculo) = ' + ' R$ ' + precoFinal200mlPassasAoRum + ' com ' + quantidadeCombos + ' de brinde;'
+    let precoFinal200mlPassasAoRum = (pote200mlPassasAoRum.reduce(somarPote200mlPassasAoRum) * precoProdutos.precoPote200Ml)
+    document.getElementById('resultadoPote200mlPassasAoRum').innerHTML = 'Quantidade de Potes de 200ml de Passas ao Rum: ' + pote200mlPassasAoRum.reduce(somarPote200mlPassasAoRum) + ' x ' + 'valor unitário de R$ ' + precoProdutos.precoPote200Ml + ' (não possui combo) = ' + ' R$ ' + precoFinal200mlPassasAoRum
 }
 
 let pote200mlMorango = []
@@ -543,8 +543,8 @@ function quantidadePote200mlMorango() {
     pote200mlMorango.push(1)
     let somarPote200mlMorango = (acumulador, valorAtual) => acumulador + valorAtual
     let quantidadeCombos = Math.floor(pote200mlMorango.reduce(somarPote200mlMorango) / 6)
-    let precoFinal200mlMorango = (pote200mlMorango.reduce(somarPote200mlMorango) * precoProdutos.precoPote200Ml) - (precoProdutos.precoPote200Ml) * quantidadeCombos
-    document.getElementById('resultadoPote200mlMorango').innerHTML = 'Quantidade de Potes de 200ml de Morango: ' + pote200mlMorango.reduce(somarPote200mlMorango) + ' x ' + 'valor unitário de R$ ' + precoProdutos.precoPote200Ml + ' (brinde não entra no cáculo) = ' + ' R$ ' + precoFinal200mlMorango + ' com ' + quantidadeCombos + ' de brinde;'
+    let precoFinal200mlMorango = (pote200mlMorango.reduce(somarPote200mlMorango) * precoProdutos.precoPote200Ml)
+    document.getElementById('resultadoPote200mlMorango').innerHTML = 'Quantidade de Potes de 200ml de Morango: ' + pote200mlMorango.reduce(somarPote200mlMorango) + ' x ' + 'valor unitário de R$ ' + precoProdutos.precoPote200Ml + ' (não possui combo) = ' + ' R$ ' + precoFinal200mlMorango
 }
 
 let pote200mlMaracuja = []
@@ -552,8 +552,8 @@ function quantidadePote200mlMaracuja() {
     pote200mlMaracuja.push(1)
     let somarPote200mlMaracuja = (acumulador, valorAtual) => acumulador + valorAtual
     let quantidadeCombos = Math.floor(pote200mlMaracuja.reduce(somarPote200mlMaracuja) / 6)
-    let precoFinal200mlMaracuja = (pote200mlMaracuja.reduce(somarPote200mlMaracuja) * precoProdutos.precoPote200Ml) - (precoProdutos.precoPote200Ml) * quantidadeCombos
-    document.getElementById('resultadoPote200mlMaracuja').innerHTML = 'Quantidade de Potes de 200ml de Maracujá: ' + pote200mlMaracuja.reduce(somarPote200mlMaracuja) + ' x ' + 'valor unitário de R$ ' + precoProdutos.precoPote200Ml + ' (brinde não entra no cáculo) = ' + ' R$ ' + precoFinal200mlMaracuja + ' com ' + quantidadeCombos + ' de brinde;'
+    let precoFinal200mlMaracuja = (pote200mlMaracuja.reduce(somarPote200mlMaracuja) * precoProdutos.precoPote200Ml)
+    document.getElementById('resultadoPote200mlMaracuja').innerHTML = 'Quantidade de Potes de 200ml de Maracujá: ' + pote200mlMaracuja.reduce(somarPote200mlMaracuja) + ' x ' + 'valor unitário de R$ ' + precoProdutos.precoPote200Ml + ' (não possui combo) = ' + ' R$ ' + precoFinal200mlMaracuja
 }
 
 /* POTE 1L */
@@ -563,8 +563,8 @@ function quantidadePote1lMousseMaracuja() {
     pote1lMousseMaracuja.push(1)
     let somarPote1lMousseMaracuja = (acumulador, valorAtual) => acumulador + valorAtual
     let quantidadeCombos = Math.floor(pote1lMousseMaracuja.reduce(somarPote1lMousseMaracuja) / 6)
-    let precoFinalMousseMaracuja = (pote1lMousseMaracuja.reduce(somarPote1lMousseMaracuja) * precoProdutos.precoPote1L) - (precoProdutos.precoPote1L) * quantidadeCombos
-    document.getElementById('resultadoPote1lMousseMaracuja').innerHTML = 'Quantidade de Potes de 1L de Mousse de Maracujá: ' + pote1lMousseMaracuja.reduce(somarPote1lMousseMaracuja) + ' x ' + 'valor unitário de R$ ' + precoProdutos.precoPote1L + ' (brinde não entra no cáculo) = ' + ' R$ ' + precoFinalMousseMaracuja + ' com ' + quantidadeCombos + ' de brinde;'
+    let precoFinalMousseMaracuja = (pote1lMousseMaracuja.reduce(somarPote1lMousseMaracuja) * precoProdutos.precoPote1L)
+    document.getElementById('resultadoPote1lMousseMaracuja').innerHTML = 'Quantidade de Potes de 1L de Mousse de Maracujá: ' + pote1lMousseMaracuja.reduce(somarPote1lMousseMaracuja) + ' x ' + 'valor unitário de R$ ' + precoProdutos.precoPote1L + ' (não possui combo) = ' + ' R$ ' + precoFinalMousseMaracuja
 }
 
 let pote1lGregoMorango = []
@@ -572,8 +572,8 @@ function quantidadePote1lGregoMorango() {
     pote1lGregoMorango.push(1)
     let somarPote1lGregoMorango = (acumulador, valorAtual) => acumulador + valorAtual
     let quantidadeCombos = Math.floor(pote1lGregoMorango.reduce(somarPote1lGregoMorango) / 6)
-    let precoFinalGregoMorango = (pote1lGregoMorango.reduce(somarPote1lGregoMorango) * precoProdutos.precoPote1L) - (precoProdutos.precoPote1L) * quantidadeCombos
-    document.getElementById('resultadoPote1lGregoMorango').innerHTML = 'Quantidade de Potes de 1L de Grego Morango: ' + pote1lGregoMorango.reduce(somarPote1lGregoMorango) + ' x ' + 'valor unitário de R$ ' + precoProdutos.precoPote1L + ' (brinde não entra no cáculo) = ' + ' R$ ' + precoFinalGregoMorango + ' com ' + quantidadeCombos + ' de brinde;'
+    let precoFinalGregoMorango = (pote1lGregoMorango.reduce(somarPote1lGregoMorango) * precoProdutos.precoPote1L)
+    document.getElementById('resultadoPote1lGregoMorango').innerHTML = 'Quantidade de Potes de 1L de Grego Morango: ' + pote1lGregoMorango.reduce(somarPote1lGregoMorango) + ' x ' + 'valor unitário de R$ ' + precoProdutos.precoPote1L + ' (não possui combo) = ' + ' R$ ' + precoFinalGregoMorango
 }
 
 let pote1lChocolateTrufado = []
@@ -581,8 +581,8 @@ function quantidadePote1lChocolateTrufado() {
     pote1lChocolateTrufado.push(1)
     let somarPote1lChocolateTrufado = (acumulador, valorAtual) => acumulador + valorAtual
     let quantidadeCombos = Math.floor(pote1lChocolateTrufado.reduce(somarPote1lChocolateTrufado) / 6)
-    let precoFinalChocolateTrufado = (pote1lChocolateTrufado.reduce(somarPote1lChocolateTrufado) * precoProdutos.precoPote1L) - (precoProdutos.precoPote1L) * quantidadeCombos
-    document.getElementById('resultadoPote1lChocolateTrufado').innerHTML = 'Quantidade de Potes de 1L de Chocolate Trufado: ' + pote1lChocolateTrufado.reduce(somarPote1lChocolateTrufado) + ' x ' + 'valor unitário de R$ ' + precoProdutos.precoPote1L + ' (brinde não entra no cáculo) = ' + ' R$ ' + precoFinalChocolateTrufado + ' com ' + quantidadeCombos + ' de brinde;'
+    let precoFinalChocolateTrufado = (pote1lChocolateTrufado.reduce(somarPote1lChocolateTrufado) * precoProdutos.precoPote1L)
+    document.getElementById('resultadoPote1lChocolateTrufado').innerHTML = 'Quantidade de Potes de 1L de Chocolate Trufado: ' + pote1lChocolateTrufado.reduce(somarPote1lChocolateTrufado) + ' x ' + 'valor unitário de R$ ' + precoProdutos.precoPote1L + ' (não possui combo) = ' + ' R$ ' + precoFinalChocolateTrufado
 }
 
 /* POTE DIET */
@@ -592,6 +592,6 @@ function quantidadePote1lNapolitanoDiet() {
     pote1lNapolitanoDiet.push(1)
     let somarPote1lNapolitanoDiet = (acumulador, valorAtual) => acumulador + valorAtual
     let quantidadeCombos = Math.floor(pote1lNapolitanoDiet.reduce(somarPote1lNapolitanoDiet) / 6)
-    let precoFinalDiet = (pote1lNapolitanoDiet.reduce(somarPote1lNapolitanoDiet) * precoProdutos.precoPote1LDiet) - (precoProdutos.precoPote1LDiet) * quantidadeCombos
-    document.getElementById('resultadoPote1lNapolitanoDiet').innerHTML = 'Quantidade de Potes de 1L de Napolitano Diet: ' + pote1lNapolitanoDiet.reduce(somarPote1lNapolitanoDiet) + ' x ' + 'valor unitário de R$ ' + precoProdutos.precoPote1LDiet + ' (brinde não entra no cáculo) = ' + ' R$ ' + precoFinalDiet + ' com ' + quantidadeCombos + ' de brinde;'
+    let precoFinalDiet = (pote1lNapolitanoDiet.reduce(somarPote1lNapolitanoDiet) * precoProdutos.precoPote1LDiet)
+    document.getElementById('resultadoPote1lNapolitanoDiet').innerHTML = 'Quantidade de Potes de 1L de Napolitano Diet: ' + pote1lNapolitanoDiet.reduce(somarPote1lNapolitanoDiet) + ' x ' + 'valor unitário de R$ ' + precoProdutos.precoPote1LDiet + ' (não possui combo) = ' + ' R$ ' + precoFinalDiet
 }
