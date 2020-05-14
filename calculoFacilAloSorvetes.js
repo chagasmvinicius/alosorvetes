@@ -239,7 +239,7 @@ function quantidadePremiumNapolitano() {
     premiumNapolitano.push(1)
     let somarPremiumNapolitano = (acumulador, valorAtual) => acumulador + valorAtual
     let quantidadeCombos = Math.floor(premiumNapolitano.reduce(somarPremiumNapolitano) / 6)
-    let precoFinalPremiumNapolitano = (premiumNapolitano.reduce(somarPremiumNapolitano) * precoProdutos.precoPremium) - (precoProdutos.precoPremium) * quantidadeCombos
+    precoFinalPremiumNapolitano = (premiumNapolitano.reduce(somarPremiumNapolitano) * precoProdutos.precoPremium) - (precoProdutos.precoPremium) * quantidadeCombos
     document.getElementById('resultadoPremiumNapolitano').innerHTML = 'Quantidade de Premium Napolitano: ' + premiumNapolitano.reduce(somarPremiumNapolitano) + ' x ' + 'valor unitário de R$ ' + precoProdutos.precoPremium + ' (brinde não entra no cáculo) = ' + ' R$ ' + precoFinalPremiumNapolitano + ' com ' + quantidadeCombos + ' de brinde;'
 }
 
@@ -248,7 +248,7 @@ function quantidadePremiumDoceLeite() {
     premiumDoceLeite.push(1)
     let somarPremiumDoceLeite = (acumulador, valorAtual) => acumulador + valorAtual
     let quantidadeCombos = Math.floor(premiumDoceLeite.reduce(somarPremiumDoceLeite) / 6)
-    let precoFinalPremiumDoceLeite = (premiumDoceLeite.reduce(somarPremiumDoceLeite) * precoProdutos.precoPremium) - (precoProdutos.precoPremium) * quantidadeCombos
+    precoFinalPremiumDoceLeite = (premiumDoceLeite.reduce(somarPremiumDoceLeite) * precoProdutos.precoPremium) - (precoProdutos.precoPremium) * quantidadeCombos
     document.getElementById('resultadoPremiumDoceLeite').innerHTML = 'Quantidade de Premium Doce de Leite: ' + premiumDoceLeite.reduce(somarPremiumDoceLeite) + ' x ' + 'valor unitário de R$ ' + precoProdutos.precoPremium + ' (brinde não entra no cáculo) = ' + ' R$ ' + precoFinalPremiumDoceLeite + ' com ' + quantidadeCombos + ' de brinde;'
 }
 
@@ -595,3 +595,6 @@ function quantidadePote1lNapolitanoDiet() {
     let precoFinalDiet = (pote1lNapolitanoDiet.reduce(somarPote1lNapolitanoDiet) * precoProdutos.precoPote1LDiet)
     document.getElementById('resultadoPote1lNapolitanoDiet').innerHTML = 'Quantidade de Potes de 1L de Napolitano Diet: ' + pote1lNapolitanoDiet.reduce(somarPote1lNapolitanoDiet) + ' x ' + 'valor unitário de R$ ' + precoProdutos.precoPote1LDiet + ' (não possui combo) = ' + ' R$ ' + precoFinalDiet
 }
+
+let precoTotalFinal = quantidadePremiumDoceLeite.precoFinalPremiumDoceLeite
+console.log(precoTotalFinal)
